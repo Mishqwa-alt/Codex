@@ -1,0 +1,953 @@
+[
+  {
+    "id": "voyager-1",
+    "name": "Voyager 1",
+    "agency": "NASA / JPL",
+    "kind": "probe",
+    "region": "interstellar",
+    "target": "Межзвёздное пространство",
+    "launch": "1977-09-05",
+    "phase": "Расширенная миссия",
+    "horizons": "-31",
+    "description": "Самый удалённый от Земли аппарат. После пролётов Юпитера и Сатурна изучает межзвёздную среду за пределами гелиопаузы.",
+    "achievements": [
+      "Пролёты Юпитера и Сатурна",
+      "Выход за гелиопаузу в 2012 году",
+      "Измерения межзвёздной плазмы и магнитного поля"
+    ],
+    "next": "Продолжение измерений, пока позволяют питание и состояние приборов. Состав работающих инструментов требует проверки по сводкам JPL.",
+    "source": "https://science.nasa.gov/mission/voyager/",
+    "color": "#a6c8ff",
+    "anchor": "deep",
+    "statusVerified": false
+  },
+  {
+    "id": "voyager-2",
+    "name": "Voyager 2",
+    "agency": "NASA / JPL",
+    "kind": "probe",
+    "region": "interstellar",
+    "target": "Межзвёздное пространство",
+    "launch": "1977-08-20",
+    "phase": "Расширенная миссия",
+    "horizons": "-32",
+    "description": "Единственный аппарат, посетивший все четыре планеты-гиганта. Исследует межзвёздную среду в другом направлении, чем Voyager 1.",
+    "achievements": [
+      "Пролёты Юпитера, Сатурна, Урана и Нептуна",
+      "Выход за гелиопаузу в 2018 году"
+    ],
+    "next": "Измерения межзвёздной среды с постепенным сокращением энергопотребления.",
+    "source": "https://science.nasa.gov/mission/voyager/",
+    "color": "#82b3ef",
+    "anchor": "deep",
+    "statusVerified": false
+  },
+  {
+    "id": "new-horizons",
+    "name": "New Horizons",
+    "agency": "NASA / APL",
+    "kind": "probe",
+    "region": "outer",
+    "target": "Пояс Койпера",
+    "launch": "2006-01-19",
+    "phase": "Расширенная миссия",
+    "horizons": "-98",
+    "description": "Первый исследователь Плутона вблизи. Продолжает путь через пояс Койпера после встречи с Аррокотом.",
+    "achievements": [
+      "Пролёт Плутона в 2015 году",
+      "Пролёт Аррокота в 2019 году"
+    ],
+    "next": "Наблюдения удалённых объектов и среды внешней Солнечной системы; новые встречи не гарантированы.",
+    "source": "https://science.nasa.gov/mission/new-horizons/",
+    "color": "#f8c587",
+    "anchor": "deep",
+    "statusVerified": false
+  },
+  {
+    "id": "jwst",
+    "name": "James Webb",
+    "agency": "NASA / ESA / CSA",
+    "kind": "telescope",
+    "region": "earth",
+    "target": "Солнце—Земля · L2",
+    "launch": "2021-12-25",
+    "phase": "Научные наблюдения",
+    "horizons": "-170",
+    "description": "Инфракрасная обсерватория изучает первые галактики, рождение звёзд и атмосферы экзопланет. Находится на гало-орбите около L2.",
+    "achievements": [
+      "Начало научных наблюдений в 2022 году",
+      "Спектроскопия атмосфер экзопланет",
+      "Наблюдения ранних галактик"
+    ],
+    "next": "Наблюдения по утверждённым научным программам и коррекции гало-орбиты.",
+    "source": "https://science.nasa.gov/mission/webb/",
+    "color": "#e9c980",
+    "anchor": "earth",
+    "statusVerified": false
+  },
+  {
+    "id": "hubble",
+    "name": "Hubble",
+    "agency": "NASA / ESA",
+    "kind": "telescope",
+    "region": "earth",
+    "target": "Орбита Земли",
+    "launch": "1990-04-24",
+    "phase": "Научные наблюдения",
+    "description": "Орбитальная обсерватория в видимом, ультрафиолетовом и ближнем инфракрасном диапазонах.",
+    "achievements": [
+      "Более трёх десятилетий наблюдений",
+      "Глубокие поля и уточнение темпа расширения Вселенной"
+    ],
+    "next": "Продолжение наблюдений в пределах доступных режимов работы.",
+    "source": "https://science.nasa.gov/mission/hubble/",
+    "color": "#c4abff",
+    "anchor": "earth",
+    "statusVerified": false
+  },
+  {
+    "id": "chandra",
+    "name": "Chandra",
+    "agency": "NASA",
+    "kind": "telescope",
+    "region": "earth",
+    "target": "Высокоэллиптическая орбита Земли",
+    "launch": "1999-07-23",
+    "phase": "Рентгеновская астрономия",
+    "description": "Рентгеновская обсерватория исследует чёрные дыры, горячий газ и остатки сверхновых.",
+    "achievements": [
+      "Наблюдения горячей Вселенной с высоким угловым разрешением"
+    ],
+    "next": "Научные наблюдения зависят от технического состояния и утверждённого финансирования.",
+    "source": "https://science.nasa.gov/mission/chandra/",
+    "color": "#b7a2f5",
+    "anchor": "earth",
+    "statusVerified": false
+  },
+  {
+    "id": "euclid",
+    "name": "Euclid",
+    "agency": "ESA",
+    "kind": "telescope",
+    "region": "earth",
+    "target": "Солнце—Земля · L2",
+    "launch": "2023-07-01",
+    "phase": "Обзор неба",
+    "description": "Создаёт трёхмерную карту распределения галактик для исследования тёмной материи и тёмной энергии.",
+    "achievements": [
+      "Вывод к L2",
+      "Начало широкоугольного обзора"
+    ],
+    "next": "Последовательные участки космологического обзора.",
+    "source": "https://www.esa.int/Science_Exploration/Space_Science/Euclid",
+    "color": "#bd9bf5",
+    "anchor": "earth",
+    "statusVerified": false
+  },
+  {
+    "id": "tess",
+    "name": "TESS",
+    "agency": "NASA / MIT",
+    "kind": "telescope",
+    "region": "earth",
+    "target": "Резонансная орбита Земли",
+    "launch": "2018-04-18",
+    "phase": "Поиск экзопланет",
+    "description": "Ищет экзопланеты методом транзитов у ярких близких звёзд.",
+    "achievements": [
+      "Обзор почти всего неба",
+      "Тысячи кандидатов в экзопланеты"
+    ],
+    "next": "Повторные наблюдения секторов неба согласно программе миссии.",
+    "source": "https://science.nasa.gov/mission/tess/",
+    "color": "#9eabf3",
+    "anchor": "earth",
+    "statusVerified": false
+  },
+  {
+    "id": "xmm-newton",
+    "name": "XMM–Newton",
+    "agency": "ESA",
+    "kind": "telescope",
+    "region": "earth",
+    "target": "Орбита Земли",
+    "launch": "1999-12-10",
+    "phase": "Рентгеновская астрономия",
+    "description": "Три рентгеновских телескопа изучают высокоэнергетические процессы во Вселенной.",
+    "achievements": [
+      "Спектроскопия чёрных дыр и скоплений галактик"
+    ],
+    "next": "Научные наблюдения в рамках расширенной программы.",
+    "source": "https://www.esa.int/Science_Exploration/Space_Science/XMM-Newton",
+    "color": "#ae9bea",
+    "anchor": "earth",
+    "statusVerified": false
+  },
+  {
+    "id": "parker",
+    "name": "Parker Solar Probe",
+    "agency": "NASA / APL",
+    "kind": "probe",
+    "region": "inner",
+    "target": "Солнечная корона",
+    "launch": "2018-08-12",
+    "phase": "Исследование Солнца",
+    "horizons": "-96",
+    "description": "Проходит через внешнюю атмосферу Солнца, измеряет солнечный ветер и магнитные поля вблизи звезды.",
+    "achievements": [
+      "Первые измерения внутри солнечной короны",
+      "Рекордные сближения с Солнцем"
+    ],
+    "next": "Повторные близкие проходы; точное расписание и доступность эфемерид проверяются отдельно.",
+    "source": "https://science.nasa.gov/mission/parker-solar-probe/",
+    "color": "#ffbc67",
+    "anchor": "sun",
+    "statusVerified": false
+  },
+  {
+    "id": "solar-orbiter",
+    "name": "Solar Orbiter",
+    "agency": "ESA / NASA",
+    "kind": "probe",
+    "region": "inner",
+    "target": "Солнце",
+    "launch": "2020-02-10",
+    "phase": "Исследование Солнца",
+    "horizons": "-144",
+    "description": "Сочетает дистанционные наблюдения Солнца с измерениями частиц и полей. Наклон орбиты позволяет изучать полярные области.",
+    "achievements": [
+      "Детальные наблюдения солнечной атмосферы",
+      "Гравитационные манёвры у Венеры"
+    ],
+    "next": "Наблюдения высоких широт по мере изменения наклона орбиты.",
+    "source": "https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter",
+    "color": "#ffad6e",
+    "anchor": "sun",
+    "statusVerified": false
+  },
+  {
+    "id": "bepicolombo",
+    "name": "BepiColombo",
+    "agency": "ESA / JAXA",
+    "kind": "probe",
+    "region": "inner",
+    "target": "Меркурий",
+    "launch": "2018-10-20",
+    "phase": "Перелёт · требуется актуализация",
+    "description": "Совместная миссия к Меркурию: европейский MPO и японский Mio предназначены для изучения поверхности и магнитосферы.",
+    "achievements": [
+      "Гравитационные манёвры у Земли, Венеры и Меркурия"
+    ],
+    "next": "Выход к Меркурию зависит от актуального плана полёта. Плановые сроки не означают состоявшееся событие.",
+    "source": "https://www.esa.int/Science_Exploration/Space_Science/BepiColombo",
+    "color": "#eac4a1",
+    "anchor": "mercury",
+    "statusVerified": false
+  },
+  {
+    "id": "juno",
+    "name": "Juno",
+    "agency": "NASA / JPL",
+    "kind": "orbiter",
+    "region": "outer",
+    "target": "Юпитер",
+    "launch": "2011-08-05",
+    "phase": "Требуется проверка продолжения",
+    "horizons": "-61",
+    "description": "Полярный орбитальный аппарат изучал внутреннее строение, атмосферу и магнитосферу Юпитера. Не считается подтверждённо действующим без новой сводки.",
+    "achievements": [
+      "Выход на орбиту Юпитера в 2016 году",
+      "Сближения с Ганимедом, Европой и Ио"
+    ],
+    "next": "Первоначально объявленная расширенная программа доходила до сентября 2025 года. Текущее состояние необходимо подтвердить.",
+    "source": "https://science.nasa.gov/mission/juno/",
+    "color": "#e5c4a2",
+    "anchor": "jupiter",
+    "statusVerified": false
+  },
+  {
+    "id": "juice",
+    "name": "JUICE",
+    "agency": "ESA",
+    "kind": "probe",
+    "region": "outer",
+    "target": "Юпитер · Ганимед",
+    "launch": "2023-04-14",
+    "phase": "Межпланетный перелёт",
+    "horizons": "-28",
+    "description": "Jupiter Icy Moons Explorer направляется к ледяным спутникам Юпитера, чтобы исследовать возможные подповерхностные океаны.",
+    "achievements": [
+      "Запуск в 2023 году",
+      "Лунно-земной гравитационный манёвр"
+    ],
+    "next": "Серия гравитационных манёвров; плановое прибытие к Юпитеру в 2031 году.",
+    "source": "https://www.esa.int/Science_Exploration/Space_Science/Juice",
+    "color": "#9ce0cc",
+    "anchor": "sun",
+    "statusVerified": false
+  },
+  {
+    "id": "europa-clipper",
+    "name": "Europa Clipper",
+    "agency": "NASA / JPL",
+    "kind": "probe",
+    "region": "outer",
+    "target": "Юпитер · Европа",
+    "launch": "2024-10-14",
+    "phase": "Межпланетный перелёт",
+    "horizons": "-159",
+    "description": "Миссия для оценки обитаемости Европы: ледяной оболочки, океана и состава поверхности.",
+    "achievements": [
+      "Запуск к системе Юпитера в 2024 году"
+    ],
+    "next": "Плановое прибытие в 2030 году и серия близких пролётов Европы.",
+    "source": "https://science.nasa.gov/mission/europa-clipper/",
+    "color": "#8bd8e0",
+    "anchor": "sun",
+    "statusVerified": false
+  },
+  {
+    "id": "lucy",
+    "name": "Lucy",
+    "agency": "NASA / SwRI",
+    "kind": "probe",
+    "region": "outer",
+    "target": "Троянские астероиды Юпитера",
+    "launch": "2021-10-16",
+    "phase": "Исследование астероидов",
+    "horizons": "-49",
+    "description": "Первое путешествие к троянским астероидам Юпитера — сохранившимся остаткам формирования планет.",
+    "achievements": [
+      "Пролёт Динкинеша и открытие спутниковой системы"
+    ],
+    "next": "Гравитационные манёвры и последовательные пролёты троянских астероидов.",
+    "source": "https://science.nasa.gov/mission/lucy/",
+    "color": "#d5bf8b",
+    "anchor": "sun",
+    "statusVerified": false
+  },
+  {
+    "id": "psyche",
+    "name": "Psyche",
+    "agency": "NASA / ASU",
+    "kind": "probe",
+    "region": "outer",
+    "target": "Астероид (16) Психея",
+    "launch": "2023-10-13",
+    "phase": "Межпланетный перелёт",
+    "horizons": "-255",
+    "description": "Направляется к богатому металлом астероиду, чтобы изучить происхождение планетных ядер.",
+    "achievements": [
+      "Запуск в 2023 году",
+      "Демонстрация оптической связи DSOC"
+    ],
+    "next": "Плановое прибытие к астероиду в 2029 году; перелёт с электрореактивной тягой.",
+    "source": "https://science.nasa.gov/mission/psyche/",
+    "color": "#c4d091",
+    "anchor": "sun",
+    "statusVerified": false
+  },
+  {
+    "id": "osiris-apex",
+    "name": "OSIRIS–APEX",
+    "agency": "NASA / University of Arizona",
+    "kind": "probe",
+    "region": "inner",
+    "target": "Астероид Апофис",
+    "launch": "2016-09-08",
+    "phase": "Расширенная миссия",
+    "horizons": "-64",
+    "description": "После доставки образца Бенну аппарат OSIRIS-REx продолжил полёт к астероиду Апофис под новым именем.",
+    "achievements": [
+      "Отбор образца Бенну",
+      "Возвращение капсулы на Землю в 2023 году"
+    ],
+    "next": "Сближение с Апофисом после его пролёта у Земли в 2029 году.",
+    "source": "https://science.nasa.gov/mission/osiris-apex/",
+    "color": "#cfa9df",
+    "anchor": "sun",
+    "statusVerified": false
+  },
+  {
+    "id": "hayabusa2",
+    "name": "Hayabusa2",
+    "agency": "JAXA",
+    "kind": "probe",
+    "region": "inner",
+    "target": "Астероиды",
+    "launch": "2014-12-03",
+    "phase": "Расширенная миссия",
+    "horizons": "-37",
+    "description": "Доставил на Землю образцы астероида Рюгу и продолжает расширенную программу исследования малых тел.",
+    "achievements": [
+      "Две посадки на Рюгу",
+      "Возвращение образцов в 2020 году"
+    ],
+    "next": "В расширенном плане — встречи с 2001 CC21 и 1998 KY26. Фактическое выполнение нужно сверять с JAXA.",
+    "source": "https://www.hayabusa2.jaxa.jp/en/",
+    "color": "#a8d9bf",
+    "anchor": "sun",
+    "statusVerified": false
+  },
+  {
+    "id": "hera",
+    "name": "Hera",
+    "agency": "ESA",
+    "kind": "probe",
+    "region": "inner",
+    "target": "Дидим · Диморф",
+    "launch": "2024-10-07",
+    "phase": "Требуется проверка этапа",
+    "description": "Изучает результат удара DART по Диморфу, чтобы превратить эксперимент в измеряемый метод планетарной защиты.",
+    "achievements": [
+      "Запуск в 2024 году"
+    ],
+    "next": "Прибытие к системе Дидима планировалось на 2026 год. Текущий этап требует подтверждения.",
+    "source": "https://www.esa.int/Space_Safety/Hera",
+    "color": "#a6c5a4",
+    "anchor": "sun",
+    "statusVerified": false
+  },
+  {
+    "id": "perseverance",
+    "name": "Perseverance",
+    "agency": "NASA / JPL",
+    "kind": "rover",
+    "region": "mars",
+    "target": "Марс · кратер Езеро",
+    "launch": "2020-07-30",
+    "phase": "Исследование поверхности",
+    "description": "Марсоход ищет следы древней обитаемой среды и собирает образцы для возможной доставки на Землю.",
+    "achievements": [
+      "Посадка 18 февраля 2021 года",
+      "Сбор и складирование герметичных образцов",
+      "Изучение древней речной дельты"
+    ],
+    "next": "Исследование новых геологических участков. Возвращение образцов зависит от отдельной программы.",
+    "source": "https://science.nasa.gov/mission/mars-2020-perseverance/",
+    "color": "#f19a77",
+    "anchor": "mars",
+    "statusVerified": false
+  },
+  {
+    "id": "curiosity",
+    "name": "Curiosity",
+    "agency": "NASA / JPL",
+    "kind": "rover",
+    "region": "mars",
+    "target": "Марс · кратер Гейла",
+    "launch": "2011-11-26",
+    "phase": "Исследование поверхности",
+    "description": "Исследует осадочные породы горы Шарп и изменения древнего марсианского климата.",
+    "achievements": [
+      "Посадка в 2012 году",
+      "Свидетельства древних озёр и органических соединений"
+    ],
+    "next": "Подъём по геологическим слоям горы Шарп в пределах технических возможностей.",
+    "source": "https://science.nasa.gov/mission/msl-curiosity/",
+    "color": "#e5a785",
+    "anchor": "mars",
+    "statusVerified": false
+  },
+  {
+    "id": "mro",
+    "name": "Mars Reconnaissance Orbiter",
+    "agency": "NASA / JPL",
+    "kind": "orbiter",
+    "region": "mars",
+    "target": "Орбита Марса",
+    "launch": "2005-08-12",
+    "phase": "Орбитальные исследования",
+    "description": "Картографирует Марс с высоким разрешением и обеспечивает ретрансляцию данных с поверхности.",
+    "achievements": [
+      "Высокодетальные снимки HiRISE",
+      "Разведка мест посадки и ретрансляция"
+    ],
+    "next": "Наблюдения поверхности и связь с действующими посадочными аппаратами.",
+    "source": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/",
+    "color": "#d9927d",
+    "anchor": "mars",
+    "statusVerified": false
+  },
+  {
+    "id": "mars-express",
+    "name": "Mars Express",
+    "agency": "ESA",
+    "kind": "orbiter",
+    "region": "mars",
+    "target": "Орбита Марса",
+    "launch": "2003-06-02",
+    "phase": "Орбитальные исследования",
+    "description": "Изучает поверхность, недра и атмосферу Марса с орбиты с 2003 года.",
+    "achievements": [
+      "Глобальная стереосъёмка",
+      "Радарное зондирование подповерхностных слоёв"
+    ],
+    "next": "Продолжение исследований согласно решениям о продлении программы.",
+    "source": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express",
+    "color": "#dcaf9b",
+    "anchor": "mars",
+    "statusVerified": false
+  },
+  {
+    "id": "tgo",
+    "name": "ExoMars TGO",
+    "agency": "ESA / Роскосмос",
+    "kind": "orbiter",
+    "region": "mars",
+    "target": "Орбита Марса",
+    "launch": "2016-03-14",
+    "phase": "Исследование атмосферы",
+    "description": "Trace Gas Orbiter измеряет малые составляющие атмосферы Марса и служит ретранслятором.",
+    "achievements": [
+      "Выход на научную орбиту",
+      "Измерения метана и других следовых газов"
+    ],
+    "next": "Спектроскопия атмосферы, съёмка и ретрансляция.",
+    "source": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars",
+    "color": "#d8b38e",
+    "anchor": "mars",
+    "statusVerified": false
+  },
+  {
+    "id": "hope",
+    "name": "Hope · Al-Amal",
+    "agency": "MBRSC / UAE Space Agency",
+    "kind": "orbiter",
+    "region": "mars",
+    "target": "Орбита Марса",
+    "launch": "2020-07-19",
+    "phase": "Требуется проверка продолжения",
+    "description": "Эмиратский аппарат исследует глобальную погоду и процессы утечки атмосферы Марса.",
+    "achievements": [
+      "Выход к Марсу в 2021 году",
+      "Наблюдения атмосферы и спутника Деймоса"
+    ],
+    "next": "Продолжение работы требует подтверждения по актуальным сообщениям агентства.",
+    "source": "https://www.emiratesmarsmission.ae/",
+    "color": "#d6bb8a",
+    "anchor": "mars",
+    "statusVerified": false
+  },
+  {
+    "id": "tianwen-1",
+    "name": "Tianwen-1 · орбитер",
+    "agency": "CNSA",
+    "kind": "orbiter",
+    "region": "mars",
+    "target": "Орбита Марса",
+    "launch": "2020-07-23",
+    "phase": "Требуется проверка продолжения",
+    "description": "Орбитальная часть китайской миссии Tianwen-1. Марсоход Zhurong учитывается отдельно и не заявлен действующим.",
+    "achievements": [
+      "Выход к Марсу и доставка Zhurong в 2021 году",
+      "Картографирование поверхности"
+    ],
+    "next": "Текущую научную программу и связь нужно подтвердить официальной сводкой.",
+    "source": "https://www.cnsa.gov.cn/english/",
+    "color": "#c7b999",
+    "anchor": "mars",
+    "statusVerified": false
+  },
+  {
+    "id": "lro",
+    "name": "Lunar Reconnaissance Orbiter",
+    "agency": "NASA",
+    "kind": "orbiter",
+    "region": "moon",
+    "target": "Орбита Луны",
+    "launch": "2009-06-18",
+    "phase": "Исследование Луны",
+    "description": "Создаёт подробные карты Луны, изучает полярные области и помогает выбирать площадки будущих посадок.",
+    "achievements": [
+      "Картография лунной поверхности",
+      "Измерения температур и освещённости полюсов"
+    ],
+    "next": "Наблюдения поверхности и поддержка планирования лунных исследований.",
+    "source": "https://science.nasa.gov/mission/lro/",
+    "color": "#d2d9e3",
+    "anchor": "earth",
+    "statusVerified": false
+  },
+  {
+    "id": "chandrayaan-2",
+    "name": "Chandrayaan-2 · орбитер",
+    "agency": "ISRO",
+    "kind": "orbiter",
+    "region": "moon",
+    "target": "Орбита Луны",
+    "launch": "2019-07-22",
+    "phase": "Исследование Луны",
+    "description": "Орбитер индийской миссии исследует поверхность и экзосферу Луны. Посадочный модуль этой миссии не действует.",
+    "achievements": [
+      "Выход на лунную орбиту в 2019 году",
+      "Наблюдения поверхности и полярных областей"
+    ],
+    "next": "Орбитальная научная программа; актуальность статуса требует проверки ISRO.",
+    "source": "https://www.isro.gov.in/Chandrayaan2.html",
+    "color": "#c1c8df",
+    "anchor": "earth",
+    "statusVerified": false
+  },
+  {
+    "id": "danuri",
+    "name": "Danuri · KPLO",
+    "agency": "KARI",
+    "kind": "orbiter",
+    "region": "moon",
+    "target": "Орбита Луны",
+    "launch": "2022-08-04",
+    "phase": "Исследование Луны",
+    "description": "Первый южнокорейский лунный орбитер исследует поверхность, магнитные поля и затенённые полярные области.",
+    "achievements": [
+      "Выход на лунную орбиту в декабре 2022 года"
+    ],
+    "next": "Исследования Луны в пределах утверждённой программы продления.",
+    "source": "https://www.kari.re.kr/eng/",
+    "color": "#b5ccd2",
+    "anchor": "earth",
+    "statusVerified": false
+  },
+  {
+    "id": "soho",
+    "name": "SOHO",
+    "agency": "ESA / NASA",
+    "launch": "1995-12-02",
+    "target": "Солнце—Земля · L1",
+    "description": "Наблюдает солнечную корону, внутреннее строение Солнца и солнечный ветер.",
+    "achievements": [
+      "Долгосрочные наблюдения солнечной активности и открытие околосолнечных комет"
+    ],
+    "next": "Продолжение наблюдений зависит от утверждённого продления и технического состояния.",
+    "source": "https://science.nasa.gov/mission/soho/",
+    "region": "inner",
+    "anchor": "earth",
+    "kind": "probe",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "sdo",
+    "name": "Solar Dynamics Observatory",
+    "agency": "NASA",
+    "launch": "2010-02-11",
+    "target": "Орбита Земли · Солнце",
+    "description": "Наблюдает Солнце в нескольких диапазонах для изучения магнитной активности и космической погоды.",
+    "achievements": [
+      "Непрерывные многолетние наблюдения солнечного диска"
+    ],
+    "next": "Наблюдения солнечной активности; текущий режим требует подтверждения.",
+    "source": "https://science.nasa.gov/mission/sdo/",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "stereo-a",
+    "name": "STEREO-A",
+    "agency": "NASA",
+    "launch": "2006-10-26",
+    "target": "Гелиоцентрическая орбита",
+    "description": "Наблюдает солнечные выбросы с точки зрения, отличной от земной. Второй аппарат STEREO-B не считается действующим.",
+    "achievements": [
+      "Наблюдения трёхмерной структуры корональных выбросов"
+    ],
+    "next": "Наблюдения гелиосферы по утверждённой программе.",
+    "source": "https://science.nasa.gov/mission/stereo/",
+    "region": "inner",
+    "anchor": "sun",
+    "kind": "probe",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "aditya-l1",
+    "name": "Aditya-L1",
+    "agency": "ISRO",
+    "launch": "2023-09-02",
+    "target": "Солнце—Земля · L1",
+    "description": "Индийская солнечная обсерватория изучает корону, хромосферу, частицы и магнитные поля.",
+    "achievements": [
+      "Выход на гало-орбиту около L1 в 2024 году"
+    ],
+    "next": "Наблюдения солнечной активности и измерения среды у L1.",
+    "source": "https://www.isro.gov.in/Aditya_L1.html",
+    "region": "inner",
+    "anchor": "earth",
+    "kind": "probe",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "hinode",
+    "name": "Hinode",
+    "agency": "JAXA / NASA / UKSA / ESA",
+    "launch": "2006-09-22",
+    "target": "Орбита Земли · Солнце",
+    "description": "Изучает магнитные поля Солнца и механизмы нагрева солнечной атмосферы.",
+    "achievements": [
+      "Высокодетальные наблюдения солнечного магнитного поля"
+    ],
+    "next": "Продолжение программы необходимо сверять с JAXA.",
+    "source": "https://science.nasa.gov/mission/hinode/",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "fermi",
+    "name": "Fermi",
+    "agency": "NASA / DOE",
+    "launch": "2008-06-11",
+    "target": "Орбита Земли",
+    "description": "Гамма-обсерватория исследует пульсары, активные ядра галактик и гамма-всплески.",
+    "achievements": [
+      "Каталоги источников гамма-излучения"
+    ],
+    "next": "Обзор гамма-неба и регистрация транзиентных событий.",
+    "source": "https://science.nasa.gov/mission/fermi/",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "swift",
+    "name": "Neil Gehrels Swift Observatory",
+    "agency": "NASA / UKSA / ASI",
+    "launch": "2004-11-20",
+    "target": "Орбита Земли",
+    "description": "Многоволновая обсерватория быстро наводится на гамма-всплески и другие переменные источники.",
+    "achievements": [
+      "Наблюдения гамма-всплесков и их послесвечений"
+    ],
+    "next": "Текущая работоспособность и доступные режимы требуют проверки.",
+    "source": "https://science.nasa.gov/mission/swift/",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "nustar",
+    "name": "NuSTAR",
+    "agency": "NASA / Caltech",
+    "launch": "2012-06-13",
+    "target": "Орбита Земли",
+    "description": "Фокусирующий телескоп жёсткого рентгеновского диапазона изучает чёрные дыры и остатки звёзд.",
+    "achievements": [
+      "Картография высокоэнергетического рентгеновского излучения"
+    ],
+    "next": "Наблюдения выбранных целей по научной программе.",
+    "source": "https://science.nasa.gov/mission/nustar/",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "ixpe",
+    "name": "IXPE",
+    "agency": "NASA / ASI",
+    "launch": "2021-12-09",
+    "target": "Орбита Земли",
+    "description": "Измеряет поляризацию рентгеновского излучения компактных объектов и остатков сверхновых.",
+    "achievements": [
+      "Наблюдения поляризации рентгеновских источников"
+    ],
+    "next": "Новые цели в рамках программы поляриметрии.",
+    "source": "https://science.nasa.gov/mission/ixpe/",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "xrism",
+    "name": "XRISM",
+    "agency": "JAXA / NASA / ESA",
+    "launch": "2023-09-06",
+    "target": "Орбита Земли",
+    "description": "Рентгеновская спектроскопическая миссия изучает движение и состав горячего газа во Вселенной.",
+    "achievements": [
+      "Начало наблюдений с микрокалориметрическим спектрометром"
+    ],
+    "next": "Спектроскопия скоплений галактик и других горячих источников.",
+    "source": "https://science.nasa.gov/mission/xrism/",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "xposat",
+    "name": "XPoSat",
+    "agency": "ISRO",
+    "launch": "2024-01-01",
+    "target": "Орбита Земли",
+    "description": "Индийская миссия рентгеновской поляриметрии и спектроскопии ярких астрофизических источников.",
+    "achievements": [
+      "Запуск специализированной поляриметрической обсерватории"
+    ],
+    "next": "Наблюдения ярких рентгеновских источников.",
+    "source": "https://www.isro.gov.in/XPoSat.html",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "einstein-probe",
+    "name": "Einstein Probe",
+    "agency": "CAS / ESA / MPE",
+    "launch": "2024-01-09",
+    "target": "Орбита Земли",
+    "description": "Обнаруживает кратковременные события в мягком рентгеновском диапазоне с помощью оптики типа «глаз омара».",
+    "achievements": [
+      "Запуск широкоугольного рентгеновского монитора"
+    ],
+    "next": "Поиск новых транзиентов и последующие наблюдения.",
+    "source": "https://www.esa.int/Science_Exploration/Space_Science/Einstein_Probe",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "svom",
+    "name": "SVOM",
+    "agency": "CNSA / CNES",
+    "launch": "2024-06-22",
+    "target": "Орбита Земли",
+    "description": "Франко-китайская обсерватория для изучения гамма-всплесков и их многоволновых послесвечений.",
+    "achievements": [
+      "Запуск в 2024 году"
+    ],
+    "next": "Обнаружение транзиентов и передача оповещений для наземных наблюдений.",
+    "source": "https://svom.cnes.fr/en",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "spherex",
+    "name": "SPHEREx",
+    "agency": "NASA / JPL",
+    "launch": "2025-03-12",
+    "target": "Орбита Земли",
+    "description": "Проводит спектральный инфракрасный обзор неба для исследования эволюции Вселенной и межзвёздных льдов.",
+    "achievements": [
+      "Запуск в 2025 году"
+    ],
+    "next": "Обзор неба; актуальное состояние научной программы нужно подтвердить.",
+    "source": "https://science.nasa.gov/mission/spherex/",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "telescope",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "punch",
+    "name": "PUNCH · 4 аппарата",
+    "agency": "NASA / SwRI",
+    "launch": "2025-03-12",
+    "target": "Орбита Земли · гелиосфера",
+    "description": "Четыре малых научных аппарата совместно исследуют переход солнечной короны в солнечный ветер. В каталоге пока представлены одной миссией.",
+    "achievements": [
+      "Запуск группировки в 2025 году"
+    ],
+    "next": "Совместные поляриметрические наблюдения гелиосферы. Индивидуальные аппараты требуют отдельного учёта.",
+    "source": "https://science.nasa.gov/mission/punch/",
+    "region": "earth",
+    "anchor": "earth",
+    "kind": "probe",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "mars-odyssey",
+    "name": "2001 Mars Odyssey",
+    "agency": "NASA / JPL",
+    "launch": "2001-04-07",
+    "target": "Орбита Марса",
+    "description": "Исследует состав поверхности и тепловые свойства Марса; использовался для ретрансляции данных.",
+    "achievements": [
+      "Долгосрочные измерения и обнаружение приповерхностного водородного льда"
+    ],
+    "next": "Текущее продолжение миссии требует проверки по NASA.",
+    "source": "https://science.nasa.gov/mission/2001-mars-odyssey/",
+    "region": "mars",
+    "anchor": "mars",
+    "kind": "orbiter",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "maven",
+    "name": "MAVEN",
+    "agency": "NASA / University of Colorado",
+    "launch": "2013-11-18",
+    "target": "Орбита Марса",
+    "description": "Исследовал верхнюю атмосферу Марса и её взаимодействие с солнечным ветром. Текущая связь не подтверждена в каталоге.",
+    "achievements": [
+      "Измерения механизмов потери марсианской атмосферы"
+    ],
+    "next": "Не включён в число подтверждённо действующих: требуется актуальная официальная сводка.",
+    "source": "https://science.nasa.gov/mission/maven/",
+    "region": "mars",
+    "anchor": "mars",
+    "kind": "orbiter",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  },
+  {
+    "id": "tianwen-2",
+    "name": "Tianwen-2",
+    "agency": "CNSA",
+    "launch": "2025-05-28",
+    "target": "Астероид Камоалева",
+    "description": "Миссия по возвращению образцов околоземного астероида с дальнейшим планом исследования кометы.",
+    "achievements": [
+      "Запуск в 2025 году"
+    ],
+    "next": "Сближение и отбор образца; фактический этап нужно сверять с CNSA.",
+    "source": "https://www.cnsa.gov.cn/english/",
+    "region": "inner",
+    "anchor": "sun",
+    "kind": "probe",
+    "phase": "Требуется актуализация",
+    "color": "#a8c7c4",
+    "statusVerified": false
+  }
+]

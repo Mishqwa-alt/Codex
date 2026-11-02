@@ -1,0 +1,2 @@
+export interface Mission {id:string;name:string;agency:string;kind:string;region:string;target:string;launch:string;phase:string;horizons?:string;description:string;achievements:string[];next:string;source:string;color:string;anchor:string;statusVerified:boolean}
+export interface Ephemeris {id:string;target:string;epoch:string;fetchedAt:number;points:{jd:number;position:number[];velocity:number[]}[];frame:string;center:string;units:string;timeScale:string;forecast:boolean;forecastError:string|null;source:string;requestUrl:string;statusVerified:boolean}
