@@ -1,38 +1,44 @@
 {
   "voyager-1": {
     "path": "/photos/voyager-1.jpg",
-    "title": "Voyager 2 Spacecraft Instruments",
-    "credit": "JPL",
-    "source": "https://images.nasa.gov/details/PIA22915",
-    "kind": "Иллюстрация"
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация NASA",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Voyager%20Probe%20%28A%29/Voyager%20Probe%20%28A%29.png",
+    "title": "voyager-1"
   },
   "voyager-2": {
     "path": "/photos/voyager-2.jpg",
-    "title": "Voyager 2 Spacecraft Instruments",
-    "credit": "JPL",
-    "source": "https://images.nasa.gov/details/PIA22915",
-    "kind": "Иллюстрация"
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация NASA",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Voyager%20Probe%20%28A%29/Voyager%20Probe%20%28A%29.png",
+    "title": "voyager-2"
   },
   "new-horizons": {
     "path": "/photos/new-horizons.jpg",
-    "title": "Nap Time for New Horizons: NASA Spacecraft Enters Hibernation",
-    "credit": "JPL",
-    "source": "https://images.nasa.gov/details/PIA21589",
-    "kind": "Иллюстрация"
+    "source": "https://commons.wikimedia.org/wiki/File:15-011a-NewHorizons-PlutoFlyby-ArtistConcept-14July2015-20150115.jpg",
+    "kind": "Иллюстрация",
+    "credit": "Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute",
+    "license": "Public domain",
+    "imageSource": "https://upload.wikimedia.org/wikipedia/commons/3/32/15-011a-NewHorizons-PlutoFlyby-ArtistConcept-14July2015-20150115.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "title": "15-011a-NewHorizons-PlutoFlyby-ArtistConcept-14July2015-20150115.jpg"
   },
   "jwst": {
     "path": "/photos/jwst.jpg",
-    "title": "NASA's Webb Telescope ISIM Gets Cubed for Gravity Test",
-    "credit": "GSFC",
-    "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000881",
-    "kind": "Фото"
+    "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
+    "kind": "Изображение",
+    "credit": "NASA / Wikimedia · автор в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/JWST_spacecraft_model_3.png/330px-JWST_spacecraft_model_3.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "title": "James Webb Space Telescope"
   },
   "hubble": {
     "path": "/photos/hubble.jpg",
-    "title": "NASA Begins Switch to Backup Spacecraft Hardware",
-    "credit": "Rebecca Roth",
-    "source": "https://images.nasa.gov/details/GSFCRR20210715208",
-    "kind": "Фото"
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация NASA",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Hubble%20Space%20Telescope%20%28A%29/Hubble%20Space%20Telescope%20%28A%29.png",
+    "title": "hubble"
   },
   "chandra": {
     "path": "/photos/chandra.jpg",
@@ -57,17 +63,20 @@
   },
   "parker": {
     "path": "/photos/parker.jpg",
-    "title": "Parker Solar Probe Spacecraft Arrival, Offload and Transport ",
-    "credit": "NASA/Ben Smegelsky",
-    "source": "https://images.nasa.gov/details/KSC-20180403-PH_JBS01_0051",
-    "kind": "Фото"
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация NASA",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Parker%20Solar%20Probe/Parker%20Solar%20Probe.png",
+    "title": "parker"
   },
   "solar-orbiter": {
     "path": "/photos/solar-orbiter.jpg",
-    "title": "Solar Orbiter Spacecraft Lift and Mate",
+    "source": "https://commons.wikimedia.org/wiki/File:Solar_Orbiter_spacecraft_is_prepared_for_encapsulation_in_the_United_Launch_Alliance_Atlas_V_payload_fairing.jpg",
+    "kind": "Фото",
     "credit": "NASA/Ben Smegelsky",
-    "source": "https://images.nasa.gov/details/KSC-20200131-PH-JBS01_0039",
-    "kind": "Фото"
+    "license": "Public domain",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Solar_Orbiter_spacecraft_is_prepared_for_encapsulation_in_the_United_Launch_Alliance_Atlas_V_payload_fairing.jpg/1280px-Solar_Orbiter_spacecraft_is_prepared_for_encapsulation_in_the_United_Launch_Alliance_Atlas_V_payload_fairing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Solar Orbiter spacecraft is prepared for encapsulation in the United Launch Alliance Atlas V payload fairing.jpg"
   },
   "europa-clipper": {
     "path": "/photos/europa-clipper.jpg",
@@ -134,17 +143,19 @@
   },
   "nustar": {
     "path": "/photos/nustar.jpg",
-    "title": "NuSTAR Hitches a Ride on the Stargazer",
-    "credit": "JPL",
-    "source": "https://images.nasa.gov/details/PIA15633",
-    "kind": "Фото"
+    "source": "https://en.wikipedia.org/wiki/NuSTAR",
+    "kind": "Изображение",
+    "credit": "NASA / Wikimedia · автор в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/NuSTAR_spacecraft_model.png/330px-NuSTAR_spacecraft_model.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "title": "NuSTAR"
   },
   "ixpe": {
     "path": "/photos/ixpe.jpg",
-    "title": "Imaging X-ray Polarimetry Explorer (IXPE) Arrival",
-    "credit": "NASA/Isaac Watson",
-    "source": "https://images.nasa.gov/details/KSC-20211105-PH-ILW01_0068",
-    "kind": "Фото"
+    "source": "https://en.wikipedia.org/wiki/IXPE",
+    "kind": "Изображение",
+    "credit": "NASA / Wikimedia · автор в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/IXPE-artist-rendition.jpg/330px-IXPE-artist-rendition.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "title": "IXPE"
   },
   "spherex": {
     "path": "/photos/spherex.jpg",
@@ -169,12 +180,12 @@
   },
   "xmm-newton": {
     "path": "/photos/xmm-newton.jpg",
-    "title": "XMM-Newton",
-    "source": "https://commons.wikimedia.org/wiki/File:ESA_XMM-Newton.svg",
-    "kind": "Изображение",
-    "credit": "European Space Agency",
-    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/ESA_XMM-Newton.svg/330px-ESA_XMM-Newton.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "license": "CC BY-SA 3.0 igo"
+    "source": "https://commons.wikimedia.org/wiki/File:XMM-Newton_spacecraft_model.png",
+    "kind": "Иллюстрация",
+    "credit": "ESA/XMM-Newton, CC BY-SA 3.0 IGO",
+    "license": "Public domain",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/XMM-Newton_spacecraft_model.png/1280px-XMM-Newton_spacecraft_model.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "XMM-Newton spacecraft model.png"
   },
   "bepicolombo": {
     "path": "/photos/bepicolombo.jpg",
@@ -214,12 +225,12 @@
   },
   "hera": {
     "path": "/photos/hera.jpg",
-    "title": "Hera",
-    "source": "https://commons.wikimedia.org/wiki/File:Hera_Campana_Louvre_Ma2283.jpg",
-    "kind": "Изображение",
-    "credit": "Marie-Lan Nguyen",
-    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Hera_Campana_Louvre_Ma2283.jpg/330px-Hera_Campana_Louvre_Ma2283.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "license": "Public domain"
+    "source": "https://commons.wikimedia.org/wiki/File:Hera_spacecraft_design.jpg",
+    "kind": "Иллюстрация",
+    "credit": "Patrick Michel, Michael Küppers, Adriano Campo Bagatin, Benoit Carry, Sébastien Charnoz, Julia de Leon, Alan Fitzsimmons, Paulo Gordo, Simon F. Green, Alain Hérique",
+    "license": "CC BY 4.0",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Hera_spacecraft_design.jpg/1280px-Hera_spacecraft_design.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Hera spacecraft design.jpg"
   },
   "mars-express": {
     "path": "/photos/mars-express.jpg",
@@ -337,11 +348,12 @@
   },
   "einstein-probe": {
     "path": "/photos/einstein-probe.jpg",
-    "title": "Einstein Probe",
-    "source": "https://en.wikipedia.org/wiki/Einstein_Probe",
-    "kind": "Изображение",
-    "credit": "Wikimedia · автор и лицензия в источнике",
-    "imageSource": "https://upload.wikimedia.org/wikipedia/en/d/d3/Einstein_Probe_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    "source": "https://commons.wikimedia.org/wiki/File:Einstein_Probe_illustration.png",
+    "kind": "Иллюстрация",
+    "credit": "China News Service",
+    "license": "CC BY 4.0",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Einstein_Probe_illustration.png/1280px-Einstein_Probe_illustration.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Einstein Probe illustration.png"
   },
   "svom": {
     "path": "/photos/svom.jpg",
