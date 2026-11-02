@@ -40,3 +40,25 @@ test('catalog has unique IDs, official HTTPS source URLs and explicit unverified
  assert.equal(new Set(missions.map(m=>m.id)).size,missions.length);
  for(const m of missions){assert.equal(new URL(m.source).protocol,'https:');assert.equal(m.statusVerified,false);assert.ok(Number.isFinite(+new Date(m.launch)));}
 });
+
+test('vector propagation is bounded, uses AU/day and rejects stale epochs',async()=>{
+ const {positionAt}=await import('../src/ephemeris.mjs');
+ const data={epoch:'2026-11-02T00:00:00Z',points:[{position:[1,2,3],velocity:[.024,0,0]}]};
+ assert.deepEqual(positionAt(data,new Date('2026-11-02T01:00:00Z')),[1.001,2,3]);
+ assert.equal(positionAt(data,new Date('2026-11-03T00:00:00Z')),null);
+ assert.equal(positionAt(undefined,new Date()),null);
+});
+test('five-minute cache epochs preserve UTC date and bound age',async()=>{
+ const {fiveMinuteBucket}=await import('../src/ephemeris.mjs');
+ assert.equal(fiveMinuteBucket(new Date('2026-11-02T23:59:59Z')).toISOString(),'2026-11-02T23:55:00.000Z');
+});
+test('bundled NASA assets match SHA-256 manifest and contain no external resources',async()=>{
+ const {createHash}=await import('node:crypto');
+ const manifest=JSON.parse(await readFile(new URL('../public/assets-manifest.json',import.meta.url),'utf8'));
+ assert.equal(manifest.assets.filter(a=>a.path.endsWith('.glb')).length,17);
+ for(const asset of manifest.assets){
+ const bytes=await readFile(new URL('../public/'+asset.path,import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),asset.sha256);
+ if(asset.path.endsWith('.glb')){assert.equal(bytes.toString('ascii',0,4),'glTF');const data=JSON.parse(bytes.toString('utf8',20,20+bytes.readUInt32LE(12)));for(const v of [...(data.images||[]),...(data.buffers||[])])assert.ok(!v.uri||v.uri.startsWith('data:'));}
+ }
+ const decoder=await readFile(new URL('../public/draco/draco_decoder.wasm',import.meta.url));assert.ok(decoder.length>100000);
+});

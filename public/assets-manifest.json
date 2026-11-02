@@ -1,0 +1,167 @@
+{
+  "repositoryCommit": "11ebb4ee043715aefbba6aeec8a61746fad67fa7",
+  "usage": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "assets": [
+    {
+      "path": "models/voyager.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Voyager%20Probe%20%28A%29/Voyager%20Probe%20%28A%29.glb",
+      "sha256": "7cf8eefb5a0fca9e4e1b0d1e51c37433124169183e5dbfd2d8034af902311821",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/jwst.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/James%20Webb%20Space%20Telescope%20%28B%29/James%20Webb%20Space%20Telescope%20%28B%29.glb",
+      "sha256": "4958e61e5a564f2efcc32cd516b9d36ea0b9bc644f64dbcfe182ce8a422ae526",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/hubble.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Hubble%20Space%20Telescope%20%28A%29/Hubble%20Space%20Telescope%20%28A%29.glb",
+      "sha256": "e5ba4de15c7d359ac8fa1ab7e286aff42dec09c0fadae3db99252587f39fa384",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/juno.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Juno%20%28B%29/Juno%20%28B%29.glb",
+      "sha256": "8a410b5eaf99660a339cf86398d61534a89bc84a2c43e3c103ad22fb31d7ef93",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/perseverance.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Mars%202020%20Perseverance%20Rover/Mars%202020%20Perseverance%20Rover.glb",
+      "sha256": "10db7c03a5e63a5a3b3e7baa6243aa4918ba045fa8ff0a731d0217491adc727f",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/parker.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Parker%20Solar%20Probe/Parker%20Solar%20Probe.glb",
+      "sha256": "4d26e84efd29a78c5d07e474f6272bb111668b58da5a7555e305a65c72ddb1c5",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/chandra.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Chandra%20X-ray%20Observatory/Chandra%20X-ray%20Observatory.glb",
+      "sha256": "9383f44fc4c6eba73c40b0c2cfe33c08c90f1fb5230274bfdaa98e0c9f116a34",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/mro.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Mars%20Reconnaissance%20Orbiter%20%28MRO%29%20%28C%29/Mars%20Reconnaissance%20Orbiter%20%28MRO%29%20%28C%29.glb",
+      "sha256": "0f92872363ebe1984738caa4a5739863b125a1bc890b3c77bff23d8daa406747",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/lro.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Lunar%20Reconnaissance%20Orbiter%20%28A%29/Lunar%20Reconnaissance%20Orbiter%20%28A%29.glb",
+      "sha256": "b9547bc7c8c37c44675a80c3c3e27b647a9ff1293cf40030ef36f806b9c616b1",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/osiris.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Origins%2C%20Spectral%20Interpretation%2C%20Resource%20Identification%2C%20and%20Security%20-%20Regolith%20Explorer%20%28OSIRIS-REx%29/OSIRIS-REx.glb",
+      "sha256": "ef8e0429ee4dd8e918908923d5efdc6d3576b9216cc8e16533b50dd28c196bca",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/fermi.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Fermi%20Gamma-ray%20Large%20Area%20Space%20Telescope/Fermi%20Gamma-ray%20Large%20Area%20Space%20Telescope.glb",
+      "sha256": "d345f3b0595f7792f699acf33b28d7401cb53cc2a20b735bca00e95644e3813c",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/swift.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Swift/Swift.glb",
+      "sha256": "e7074fe1590550747fbcd6803b0c6086b4f57cafd8e3d93789f0b0b7e59b0372",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/sdo.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Solar%20Dynamics%20Observatory/Solar%20Dynamics%20Observatory.glb",
+      "sha256": "8ce4607bd65f098eee22f02717a182d6721610c940a961511dfbca832a3eda95",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/stereo.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Solar%20TErrestrial%20RElations%20Observatory%20%28STEREO%29/Solar%20TErrestrial%20RElations%20Observatory%20%28STEREO%29.glb",
+      "sha256": "0215f18b40bebb3652398b60e51cb5d8c6a4100a33a6a31768b9087d6239d9bf",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/soho.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Solar%20and%20Heliospheric%20Observatory/Solar%20and%20Heliospheric%20Observatory.glb",
+      "sha256": "fac23d6f1032bf08833b08d81a9c945f81e2883ca974f37ff7d99fb94a320d93",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/hinode.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Hinode%20%28Solar-B%29/Hinode%20%28Solar-B%29.glb",
+      "sha256": "104f23212d379541990c28b26999db3bcfb2ef0731285f2366219e5438e125e6",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "models/tess.glb",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Transiting%20Exoplanet%20Survey%20Satellite%20%28TESS%29%20%28A%29/Transiting%20Exoplanet%20Survey%20Satellite%20%28TESS%29%20%28A%29.glb",
+      "sha256": "2b82a0191af6f06081368bb59d6cbb63b13ad8f019cd7ad08229e911e5b9ee6a",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "textures/earth.jpg",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/Images%20and%20Textures/Earth%20%28A%29/Earth%20%28A%29.jpg",
+      "sha256": "5e18afce2860f02a215c09954fff5d3d1ca140cafa26c368d24d7636dd6705a7",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "textures/mars.jpg",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/Images%20and%20Textures/Mars/Mars.jpg",
+      "sha256": "12ec6bf02ebd42a246edc778cb2ce8c595b4d9f0892badf0bfff8abb2303c780",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "textures/venus.jpg",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/Images%20and%20Textures/Venus/Venus.jpg",
+      "sha256": "e395bced59e95339efbdd002d4a0bbbf81fe323a6694f3a4039120560c80e789",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "textures/jupiter.jpg",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/Images%20and%20Textures/Jupiter/Jupiter.jpg",
+      "sha256": "ac2d387f8ea56a59f45dea37993c779a730f49d7d9fdbc8d36c307a351b1f1a1",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "textures/saturn.jpg",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/Images%20and%20Textures/Saturn/Saturn.jpg",
+      "sha256": "d959a239e3d87630daf08e2a688dcbf315fe01b1fd474e55522770108f40aca7",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    },
+    {
+      "path": "textures/neptune.jpg",
+      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/Images%20and%20Textures/Neptune/Neptune.jpg",
+      "sha256": "e9bb2b7bcfb98d3f1adc6f2e20e833a00c11e9677238d8a00ae7431214ca70aa",
+      "credit": "NASA 3D Resources / contributing authors",
+      "modified": false
+    }
+  ]
+}

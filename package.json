@@ -1,12 +1,12 @@
 {
   "name": "orbita-mission-atlas",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "node server/index.mjs",
     "build": "tsc -b && vite build",
-    "start": "NODE_ENV=production node server/index.mjs",
+    "start": "node server/index.mjs --production",
     "test": "node tests/science.test.mjs",
     "check": "tsc -b",
     "test:e2e": "playwright test"

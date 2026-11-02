@@ -103,7 +103,8 @@
     "source": "https://science.nasa.gov/mission/hubble/",
     "color": "#c4abff",
     "anchor": "earth",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-48"
   },
   {
     "id": "chandra",
@@ -162,7 +163,8 @@
     "source": "https://science.nasa.gov/mission/tess/",
     "color": "#9eabf3",
     "anchor": "earth",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-95"
   },
   {
     "id": "xmm-newton",
@@ -427,7 +429,8 @@
     "source": "https://science.nasa.gov/mission/mars-2020-perseverance/",
     "color": "#f19a77",
     "anchor": "mars",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-168"
   },
   {
     "id": "curiosity",
@@ -447,7 +450,8 @@
     "source": "https://science.nasa.gov/mission/msl-curiosity/",
     "color": "#e5a785",
     "anchor": "mars",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-76"
   },
   {
     "id": "mro",
@@ -467,7 +471,8 @@
     "source": "https://science.nasa.gov/mission/mars-reconnaissance-orbiter/",
     "color": "#d9927d",
     "anchor": "mars",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-74"
   },
   {
     "id": "mars-express",
@@ -487,7 +492,8 @@
     "source": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express",
     "color": "#dcaf9b",
     "anchor": "mars",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-41"
   },
   {
     "id": "tgo",
@@ -567,7 +573,8 @@
     "source": "https://science.nasa.gov/mission/lro/",
     "color": "#d2d9e3",
     "anchor": "earth",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-85"
   },
   {
     "id": "chandrayaan-2",
@@ -625,7 +632,8 @@
     "kind": "probe",
     "phase": "Требуется актуализация",
     "color": "#a8c7c4",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-21"
   },
   {
     "id": "sdo",
@@ -663,7 +671,8 @@
     "kind": "probe",
     "phase": "Требуется актуализация",
     "color": "#a8c7c4",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-234"
   },
   {
     "id": "aditya-l1",
@@ -910,7 +919,8 @@
     "kind": "orbiter",
     "phase": "Требуется актуализация",
     "color": "#a8c7c4",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-53"
   },
   {
     "id": "maven",
@@ -929,7 +939,8 @@
     "kind": "orbiter",
     "phase": "Требуется актуализация",
     "color": "#a8c7c4",
-    "statusVerified": false
+    "statusVerified": false,
+    "horizons": "-202"
   },
   {
     "id": "tianwen-2",
