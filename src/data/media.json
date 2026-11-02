@@ -57,12 +57,11 @@
   },
   "tess": {
     "path": "/photos/tess.jpg",
-    "title": "NASA — fully assembled tess",
-    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "title": "File:Transiting Exoplanet Survey Satellite artist concept (transparent background).png",
+    "source": "https://commons.wikimedia.org/wiki/File:Transiting_Exoplanet_Survey_Satellite_artist_concept_(transparent_background).png",
     "kind": "Иллюстрация собранного аппарата",
-    "credit": "NASA 3D Resources",
-    "license": "NASA media guidelines",
-    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Transiting%20Exoplanet%20Survey%20Satellite%20%28TESS%29%20%28A%29/Transiting%20Exoplanet%20Survey%20Satellite%20%28TESS%29%20%28A%29.png"
+    "credit": "NASA / MIT / TESS team",
+    "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Transiting_Exoplanet_Survey_Satellite_artist_concept_%28transparent_background%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
   "parker": {
     "path": "/photos/parker.jpg",
