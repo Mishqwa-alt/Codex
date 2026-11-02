@@ -45,7 +45,7 @@ test('vector propagation is bounded, uses AU/day and rejects stale epochs',async
  const {positionAt}=await import('../src/ephemeris.mjs');
  const data={epoch:'2026-11-02T00:00:00Z',points:[{position:[1,2,3],velocity:[.024,0,0]}]};
  assert.deepEqual(positionAt(data,new Date('2026-11-02T01:00:00Z')),[1.001,2,3]);
- assert.equal(positionAt(data,new Date('2026-11-03T00:00:00Z')),null);
+ assert.ok(positionAt(data,new Date('2026-11-03T00:00:00Z'))?.every(Number.isFinite));assert.equal(positionAt(data,new Date('2035-11-03T00:00:00Z')),null);
  assert.equal(positionAt(undefined,new Date()),null);
 });
 test('five-minute cache epochs preserve UTC date and bound age',async()=>{
@@ -61,4 +61,17 @@ test('bundled NASA assets match SHA-256 manifest and contain no external resourc
  if(asset.path.endsWith('.glb')){assert.equal(bytes.toString('ascii',0,4),'glTF');const data=JSON.parse(bytes.toString('utf8',20,20+bytes.readUInt32LE(12)));for(const v of [...(data.images||[]),...(data.buffers||[])])assert.ok(!v.uri||v.uri.startsWith('data:'));}
  }
  const decoder=await readFile(new URL('../public/draco/draco_decoder.wasm',import.meta.url));assert.ok(decoder.length>100000);
+});
+test('two-body forecast preserves a circular solar orbit and Hermite interpolation reaches endpoints',async()=>{
+ const {propagate,positionAt}=await import('../src/ephemeris.mjs');
+ const velocity=Math.sqrt(.0002959122082855911),p=propagate([1,0,0],[0,velocity,0],365.2569);
+ assert.ok(Math.abs(Math.hypot(...p)-1)<.0001);assert.ok(Math.abs(p[0]-1)<.001);
+ const data={epoch:'2026-11-03T00:00:00Z',points:[{jd:1,position:[1,0,0],velocity:[0,1,0]},{jd:3,position:[1,2,0],velocity:[0,1,0]}]};
+ assert.deepEqual(positionAt(data,new Date('2026-11-04T00:00:00Z')),[1,1,0]);
+});
+test('planet-bound spacecraft fall back to their host instead of escaping on a solar-only estimate',async()=>{
+ const {missionPositionAt}=await import('../src/ephemeris.mjs');
+ const data={epoch:'2026-11-03T00:00:00Z',points:[{jd:1,position:[1,0,0],velocity:[0,.02,0]}]};
+ assert.equal(missionPositionAt({anchor:'earth'},data,new Date('2027-11-03T00:00:00Z')),null);
+ assert.ok(missionPositionAt({anchor:'sun'},data,new Date('2027-11-03T00:00:00Z')));
 });

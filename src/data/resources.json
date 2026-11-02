@@ -1,0 +1,170 @@
+{
+  "jwst": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D1%81%20%D0%A3%D1%8D%D0%B1%D0%B1%20%28%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%BA%D0%BE%D0%BF%29",
+    "title": "Джеймс Уэбб (телескоп)"
+  },
+  "hubble": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B1%D0%B1%D0%BB%20%28%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%BA%D0%BE%D0%BF%29",
+    "title": "Хаббл (телескоп)"
+  },
+  "parker": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%BA%D0%B5%D1%80%20%28%D1%81%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D0%B9%20%D0%B7%D0%BE%D0%BD%D0%B4%29",
+    "title": "Паркер (солнечный зонд)"
+  },
+  "juno": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%AE%D0%BD%D0%BE%D0%BD%D0%B0%20%28%D0%BA%D0%BE%D1%81%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%29",
+    "title": "Юнона (космический аппарат)"
+  },
+  "psyche": {
+    "article": "https://ru.wikipedia.org/wiki/Psyche%20%28%D0%BA%D0%BE%D1%81%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%29",
+    "title": "Psyche (космический аппарат)"
+  },
+  "voyager-1": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D1%8F%D0%B4%D0%B6%D0%B5%D1%80-1",
+    "title": "Вояджер-1"
+  },
+  "voyager-2": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D1%8F%D0%B4%D0%B6%D0%B5%D1%80-2",
+    "title": "Вояджер-2"
+  },
+  "new-horizons": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B3%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D1%8B",
+    "title": "Новые горизонты"
+  },
+  "perseverance": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B5%D0%B2%D0%B5%D1%80%D0%B0%D0%BD%D1%81%20%28%D0%BC%D0%B0%D1%80%D1%81%D0%BE%D1%85%D0%BE%D0%B4%29",
+    "title": "Персеверанс (марсоход)"
+  },
+  "curiosity": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%9A%D1%8C%D1%8E%D1%80%D0%B8%D0%BE%D1%81%D0%B8%D1%82%D0%B8",
+    "title": "Кьюриосити"
+  },
+  "osiris-apex": {
+    "article": "https://ru.wikipedia.org/wiki/OSIRIS-REx",
+    "title": "OSIRIS-REx"
+  },
+  "chandrayaan-2": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%D1%8F%D0%BD-2",
+    "title": "Чандраян-2"
+  },
+  "hope": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D1%8C-%D0%90%D0%BC%D0%B0%D0%BB%D1%8C",
+    "title": "Аль-Амаль"
+  },
+  "tianwen-1": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%A2%D1%8F%D0%BD%D1%8C%D0%B2%D1%8D%D0%BD%D1%8C-1",
+    "title": "Тяньвэнь-1"
+  },
+  "tianwen-2": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%A2%D1%8F%D0%BD%D1%8C%D0%B2%D1%8D%D0%BD%D1%8C-2",
+    "title": "Тяньвэнь-2"
+  },
+  "danuri": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%94%D0%B0%D0%BD%D1%83%D1%80%D0%B8",
+    "title": "Данури"
+  },
+  "tgo": {
+    "article": "https://ru.wikipedia.org/wiki/Trace%20Gas%20Orbiter",
+    "title": "Trace Gas Orbiter"
+  },
+  "hayabusa2": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D1%8F%D0%B1%D1%83%D1%81%D0%B0-2",
+    "title": "Хаябуса-2"
+  },
+  "bepicolombo": {
+    "article": "https://ru.wikipedia.org/wiki/BepiColombo",
+    "title": "BepiColombo"
+  },
+  "juice": {
+    "article": "https://ru.wikipedia.org/wiki/Jupiter%20Icy%20Moons%20Explorer",
+    "title": "Jupiter Icy Moons Explorer"
+  },
+  "hinode": {
+    "article": "https://ru.wikipedia.org/wiki/Hinode",
+    "title": "Hinode"
+  },
+  "einstein-probe": {
+    "article": "https://ru.wikipedia.org/wiki/Einstein%20Probe",
+    "title": "Einstein Probe"
+  },
+  "lro": {
+    "article": "https://ru.wikipedia.org/wiki/Lunar%20Reconnaissance%20Orbiter",
+    "title": "Lunar Reconnaissance Orbiter"
+  },
+  "mro": {
+    "article": "https://ru.wikipedia.org/wiki/Mars%20Reconnaissance%20Orbiter",
+    "title": "Mars Reconnaissance Orbiter"
+  },
+  "fermi": {
+    "article": "https://ru.wikipedia.org/wiki/Fermi%20%28%D0%BA%D0%BE%D1%81%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B3%D0%B0%D0%BC%D0%BC%D0%B0-%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%BA%D0%BE%D0%BF%29",
+    "title": "Fermi (космический гамма-телескоп)"
+  },
+  "tess": {
+    "article": "https://ru.wikipedia.org/wiki/TESS",
+    "title": "TESS"
+  },
+  "aditya-l1": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%90%D0%B4%D0%B8%D1%82%D1%8C%D1%8F-L1",
+    "title": "Адитья-L1"
+  },
+  "mars-odyssey": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D1%81%20%D0%9E%D0%B4%D0%B8%D1%81%D1%81%D0%B5%D0%B9",
+    "title": "Марс Одиссей"
+  },
+  "chandra": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D0%BD%D0%B4%D1%80%D0%B0",
+    "title": "Чандра"
+  },
+  "euclid": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%95%D0%B2%D0%BA%D0%BB%D0%B8%D0%B4",
+    "title": "Евклид"
+  },
+  "solar-orbiter": {
+    "article": "https://ru.wikipedia.org/wiki/Solar%20Orbiter",
+    "title": "Solar Orbiter"
+  },
+  "europa-clipper": {
+    "article": "https://ru.wikipedia.org/wiki/Europa%20Clipper",
+    "title": "Europa Clipper"
+  },
+  "hera": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B0",
+    "title": "Гера"
+  },
+  "mars-express": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D1%81-%D1%8D%D0%BA%D1%81%D0%BF%D1%80%D0%B5%D1%81%D1%81",
+    "title": "Марс-экспресс"
+  },
+  "soho": {
+    "article": "https://ru.wikipedia.org/wiki/SOHO",
+    "title": "SOHO"
+  },
+  "sdo": {
+    "article": "https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%81%D0%B5%D1%80%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D1%81%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D0%B9%20%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B8",
+    "title": "Обсерватория солнечной динамики"
+  },
+  "stereo-a": {
+    "article": "https://ru.wikipedia.org/wiki/STEREO",
+    "title": "STEREO"
+  },
+  "swift": {
+    "article": "https://ru.wikipedia.org/wiki/Swift%20%28%D0%BA%D0%BE%D1%81%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%29",
+    "title": "Swift (космический аппарат)"
+  },
+  "nustar": {
+    "article": "https://ru.wikipedia.org/wiki/NuSTAR",
+    "title": "NuSTAR"
+  },
+  "xrism": {
+    "article": "https://ru.wikipedia.org/wiki/XRISM",
+    "title": "XRISM"
+  },
+  "spherex": {
+    "article": "https://ru.wikipedia.org/wiki/SPHEREx",
+    "title": "SPHEREx"
+  },
+  "maven": {
+    "article": "https://ru.wikipedia.org/wiki/Mars%20Atmosphere%20and%20Volatile%20Evolution",
+    "title": "Mars Atmosphere and Volatile Evolution"
+  }
+}

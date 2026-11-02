@@ -4,7 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {getVectors} from './horizons.mjs';
 import {fiveMinuteBucket} from '../src/ephemeris.mjs';
-const bodies=[['mercury','199'],['venus','299'],['earth','399'],['mars','499'],['jupiter','599'],['saturn','699'],['uranus','799'],['neptune','899']].map(([id,horizons])=>({id,horizons,body:true}));
+const bodies=[['mercury','199'],['venus','299'],['earth','399'],['mars','499'],['jupiter','599'],['saturn','699'],['uranus','799'],['neptune','899'],['dest-psyche','16;'],['dest-apophis','99942;'],['dest-didymos','65803;']].map(([id,horizons])=>({id,horizons,body:true}));
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const missions=JSON.parse(await readFile(path.join(root,'src/data/missions.json'),'utf8'));
 const app=express(),cache=new Map(),inflight=new Map();

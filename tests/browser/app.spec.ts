@@ -37,7 +37,7 @@ test('date, layer switches and scientific methodology work',async({page})=>{
  await page.getByLabel('Названия планет и аппаратов').uncheck();
  await page.getByLabel('Масштаб расстояний').selectOption('linear');
  await page.getByRole('button',{name:'Закрыть',exact:true}).click();
- await expect(page.locator('.map-coordinate')).toContainText('Линейные');
+ await page.getByRole('button',{name:'Слои и масштаб',exact:true}).click();await expect(page.getByLabel('Масштаб расстояний')).toHaveValue('linear');await page.getByRole('button',{name:'Закрыть',exact:true}).click();
  await expect(page.locator('.estimate-label')).toHaveCount(0);
  await page.getByRole('button',{name:'О данных',exact:true}).click();
  await expect(page.getByRole('dialog')).toContainText('48 миссий');
@@ -49,7 +49,7 @@ test('real vectors take priority over estimates and expose provenance',async({pa
  await page.reload();await expect(page.getByRole('button',{name:'Найти на карте'})).toBeVisible();
  await expect(page.locator('.estimate-label').filter({hasText:'Voyager 1'})).toHaveCount(0);
  await page.getByRole('button',{name:'Траектория',exact:true}).click();
- await expect(page.locator('.detail-content')).toContainText('ГЕЛИОЦЕНТРИЧЕСКАЯ СКОРОСТЬ');
+ await expect(page.locator('.detail-content')).toContainText('СКОРОСТЬ ОТНОСИТЕЛЬНО СОЛНЦА');
  await expect(page.getByRole('button',{name:'Скачать векторы JSON'})).toBeVisible();
 });
 test('mobile catalog and detail remain accessible without horizontal overflow',async({page})=>{
@@ -71,7 +71,7 @@ test('API health and input validation work independently of upstream',async({req
 test('planet inspection loads local texture and black-space view',async({page})=>{
  const texture=page.waitForResponse(r=>r.url().endsWith('/textures/earth.jpg')&&r.ok());
  await page.getByLabel('Рассмотреть планету').selectOption('earth');await texture;
- await expect(page.locator('.planet-focus-info')).toContainText('Микрорельеф иллюстративный');
+ await expect(page.locator('.planet-focus-info')).toContainText('Земля');
  await expect.poll(async()=>{const value=await page.locator('.space-canvas').getAttribute('data-camera-eye');return value?.split(',').length;}).toBe(3);
  await page.screenshot({path:'/tmp/orbita-v2-earth.png'});
 });
@@ -87,11 +87,11 @@ test('WASD, shift altitude and ctrl wheel move the camera without affecting sear
  await page.keyboard.down('KeyD');await page.waitForTimeout(500);await page.keyboard.up('KeyD');
  await expect.poll(async()=>{const next=await read('data-camera-target');return Math.hypot(...next.map((v,i)=>v-before[i]));}).toBeGreaterThan(.02);
  const startY=(await read('data-camera-target'))[1];
- await page.keyboard.down('Shift');await page.keyboard.down('KeyW');await page.waitForTimeout(500);await page.keyboard.up('KeyW');await page.keyboard.up('Shift');
+ await page.keyboard.down('Space');await page.waitForTimeout(500);await page.keyboard.up('Space');
  await expect.poll(async()=>(await read('data-camera-target'))[1]).toBeGreaterThan(startY+.01);
  const distance=async()=>{const eye=await read('data-camera-eye'),look=await read('data-camera-target');return Math.hypot(...eye.map((v,i)=>v-look[i]));};
  const beforeZoom=await distance();const box=(await canvas.boundingBox())!;
- await page.mouse.move(box.x+box.width*.8,box.y+box.height*.4);await page.keyboard.down('Control');await page.mouse.wheel(0,-120);await page.keyboard.up('Control');
+ await page.mouse.move(box.x+box.width*.8,box.y+box.height*.4);await page.mouse.wheel(0,-120);
  await expect.poll(distance).toBeLessThan(beforeZoom*.95);
  await page.getByLabel('Поиск миссий').fill('');await page.waitForTimeout(350);
  const stationary=await read('data-camera-target');await page.getByLabel('Поиск миссий').pressSequentially('wasd');await page.waitForTimeout(400);

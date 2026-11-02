@@ -3,7 +3,7 @@ const proxy=process.env.HTTPS_PROXY || process.env.https_proxy;
 const dispatcher=proxy ? new ProxyAgent(proxy) : undefined;
 export function parseVectors(text,expectedTarget){
  const target=text.match(/Target body name:\s*([^\r\n]+)/)?.[1]?.trim();
- if(!target || !target.includes(`(${expectedTarget})`)) throw new Error('Horizons вернул другой объект; данные отклонены.');
+ if(!target || !(expectedTarget.endsWith(';')?new RegExp('^'+expectedTarget.slice(0,-1)+'\\s').test(target):target.includes(`(${expectedTarget})`))) throw new Error('Horizons вернул другой объект; данные отклонены.');
  const block=text.split('$$SOE')[1]?.split('$$EOE')[0];
  if(!block) throw new Error('На выбранную дату эфемериды отсутствуют.');
  const points=block.trim().split('\n').filter(Boolean).map(line=>{
