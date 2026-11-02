@@ -123,10 +123,10 @@
     },
     {
       "path": "textures/earth.jpg",
-      "source": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/Images%20and%20Textures/Earth%20%28A%29/Earth%20%28A%29.jpg",
-      "sha256": "5e18afce2860f02a215c09954fff5d3d1ca140cafa26c368d24d7636dd6705a7",
-      "credit": "NASA 3D Resources / contributing authors",
-      "modified": false
+      "source": "https://commons.wikimedia.org/wiki/File:Land_ocean_ice_cloud_hires.jpg",
+      "sha256": "d1427771565c7ac0b80b6edd7c0b2ad22a8ce4f6ec20f288fd610e52c098b035",
+      "credit": "NASA Blue Marble / Reto St\u00f6ckli; Wikimedia Commons",
+      "modified": true
     },
     {
       "path": "textures/mars.jpg",

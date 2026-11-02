@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-test.beforeEach(async({page})=>{await page.route('**/api/ephemeris/**',r=>r.fulfill({status:502,json:{code:'source_unavailable',error:'Источник временно недоступен'}}));await page.goto('/');});
+test.beforeEach(async({page})=>{await page.addInitScript(()=>localStorage.setItem('orbita-welcome-seen','true'));await page.route('**/api/ephemeris/**',r=>r.fulfill({status:502,json:{code:'source_unavailable',error:'Источник временно недоступен'}}));await page.goto('/');});
 test('WebGL map renders, fallback estimate and mission catalog remain useful offline',async({page})=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
  await expect(page.locator('canvas')).toBeVisible();
@@ -39,7 +39,7 @@ test('date, layer switches and scientific methodology work',async({page})=>{
  await page.getByRole('button',{name:'Закрыть',exact:true}).click();
  await page.getByRole('button',{name:'Слои и масштаб',exact:true}).click();await expect(page.getByLabel('Масштаб расстояний')).toHaveValue('linear');await page.getByRole('button',{name:'Закрыть',exact:true}).click();
  await expect(page.locator('.estimate-label')).toHaveCount(0);
- await page.getByRole('button',{name:'О данных',exact:true}).click();
+ await page.getByRole('button',{name:'Информация о карте',exact:true}).click();
  await expect(page.getByRole('dialog')).toContainText('48 миссий');
  await page.keyboard.press('Escape');await expect(page.getByRole('dialog')).toHaveCount(0);
 });

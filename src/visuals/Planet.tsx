@@ -28,8 +28,8 @@ function Material({id,radius}:{id:string;radius:number}){
  const texture=useTexture(`/textures/${id}.jpg`);
  const color=useMemo(()=>{const t=texture.clone();t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;t.needsUpdate=true;return t;},[texture]);
  const bump=useMemo(()=>makeTexture(id,true),[id]);
- const rocky=['earth','mars'].includes(id);
- return <meshStandardMaterial map={color} roughness={id==='earth'?.72:.95} metalness={0} bumpMap={rocky?bump:null} bumpScale={rocky?radius*.014:0}/>;
+ const rocky=id==='mars';
+ return <meshStandardMaterial map={color} roughness={id==='earth'?.48:.95} metalness={0} bumpMap={rocky?bump:null} bumpScale={rocky?radius*.014:0}/>;
 }
 function ProceduralMaterial({id,radius}:{id:string;radius:number}){
  const texture=useMemo(()=>makeTexture(id),[id]),bump=useMemo(()=>makeTexture(id,true),[id]);
@@ -45,7 +45,7 @@ export default function Planet({id,radius}:{id:string;radius:number}){
  <mesh castShadow receiveShadow rotation={[0,.6,0]}><sphereGeometry args={[radius,96,64]}/><Suspense fallback={<meshStandardMaterial color="#a8a8a3" roughness={1}/>}>
  {mapped.has(id)?<Material id={id} radius={radius}/>:<ProceduralMaterial id={id} radius={radius}/>}</Suspense></mesh>
  {id==='saturn'&&<Rings radius={radius}/>}
- {id==='earth'&&<mesh><sphereGeometry args={[radius*1.018,64,40]}/><meshBasicMaterial color="#609aca" transparent opacity={.065} side={THREE.BackSide} depthWrite={false}/></mesh>}
+ {id==='earth'&&<mesh><sphereGeometry args={[radius*1.018,64,40]}/><meshBasicMaterial color="#609aca" transparent opacity={.14} side={THREE.BackSide} depthWrite={false}/></mesh>}
  </group>;
 }
 export function SunSurface(){const map=useMemo(()=>makeTexture('sun'),[]);return <mesh><sphereGeometry args={[.2,64,40]}/><meshBasicMaterial map={map} color="#ffde97"/></mesh>;}

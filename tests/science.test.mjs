@@ -75,3 +75,12 @@ test('planet-bound spacecraft fall back to their host instead of escaping on a s
  assert.equal(missionPositionAt({anchor:'earth'},data,new Date('2027-11-03T00:00:00Z')),null);
  assert.ok(missionPositionAt({anchor:'sun'},data,new Date('2027-11-03T00:00:00Z')));
 });
+test('single-vector spacecraft get a coast trail even without a published forecast',async()=>{
+ const {missionTrail}=await import('../src/trails.mjs');
+ const mission=missions.find(m=>m.id==='hayabusa2'),date=new Date('2026-11-03T00:00:00Z');
+ const data={epoch:date.toISOString(),forecast:false,points:[{jd:1,position:[1.2,0,0],velocity:[0,.015,0]}]};
+ const path=missionTrail(mission,data,date);assert.equal(path.kind,'coast');assert.equal(path.points.length,65);assert.ok(path.points.every(p=>p.every(Number.isFinite)));
+ assert.notDeepEqual(path.points[0],path.points.at(-1));
+ const bound=missionTrail(missions.find(m=>m.id==='hubble'),undefined,date);assert.equal(bound.kind,'local-orbit');
+ const rover=missionTrail(missions.find(m=>m.id==='perseverance'),undefined,date);assert.equal(rover.kind,'host-motion');
+});

@@ -27,7 +27,7 @@ export default function Navigation({target,reset,onMotion,onBack,onHome}:{onBack
  const up=(e:KeyboardEvent)=>{keys.current.delete(e.code);shift.current=e.shiftKey;};
  const blur=()=>{keys.current.clear();shift.current=false;};
  const focus=()=>canvas.focus({preventScroll:true});
- const back=(e:MouseEvent)=>{e.preventDefault();e.stopPropagation();onBack();};canvas.addEventListener('contextmenu',back);
+ const back=(e:MouseEvent)=>{e.preventDefault();e.stopPropagation();};canvas.addEventListener('contextmenu',back);
  const wheel=(e:WheelEvent)=>{e.preventDefault();e.stopImmediatePropagation();destination.current=null;const c=controls.current;if(!c)return;const offset=camera.position.clone().sub(c.target);const length=THREE.MathUtils.clamp(offset.length()*Math.exp(THREE.MathUtils.clamp(e.deltaY,-180,180)*.002),c.minDistance,c.maxDistance);offset.setLength(length);camera.position.copy(c.target).add(offset);c.update();};
  canvas.tabIndex=0;canvas.setAttribute('aria-label','3D-карта: WASD — полёт, Shift — быстрее, пробел/C — высота, колесо — приближение');
  canvas.addEventListener('pointerdown',focus);canvas.addEventListener('wheel',wheel,{passive:false,capture:true});

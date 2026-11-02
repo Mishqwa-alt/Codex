@@ -26,11 +26,12 @@
   },
   "jwst": {
     "path": "/photos/jwst.jpg",
-    "source": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
-    "kind": "Изображение",
-    "credit": "NASA / Wikimedia · автор в источнике",
-    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/JWST_spacecraft_model_3.png/330px-JWST_spacecraft_model_3.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "title": "James Webb Space Telescope"
+    "title": "NASA — fully assembled jwst",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA 3D Resources",
+    "license": "NASA media guidelines",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/James%20Webb%20Space%20Telescope%20%28B%29/James%20Webb%20Space%20Telescope%20%28B%29.png"
   },
   "hubble": {
     "path": "/photos/hubble.jpg",
@@ -56,10 +57,12 @@
   },
   "tess": {
     "path": "/photos/tess.jpg",
-    "title": "TESS Spacecraft Move to Clean Room",
-    "credit": "NASA/Ben Smegelsky",
-    "source": "https://images.nasa.gov/details/KSC-20180212-PH-JBS03_0082",
-    "kind": "Фото"
+    "title": "NASA — fully assembled tess",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA 3D Resources",
+    "license": "NASA media guidelines",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Transiting%20Exoplanet%20Survey%20Satellite%20%28TESS%29%20%28A%29/Transiting%20Exoplanet%20Survey%20Satellite%20%28TESS%29%20%28A%29.png"
   },
   "parker": {
     "path": "/photos/parker.jpg",
@@ -80,17 +83,20 @@
   },
   "europa-clipper": {
     "path": "/photos/europa-clipper.jpg",
-    "title": "NASA Begins Assembly of Europa Clipper Spacecraft",
-    "credit": "JPL",
-    "source": "https://images.nasa.gov/details/PIA25125",
-    "kind": "Фото"
+    "source": "https://images.nasa.gov/details/PIA26068",
+    "title": "Europa Clipper Artist's Concept",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA/JPL-Caltech",
+    "imageSource": "https://images-assets.nasa.gov/image/PIA26068/PIA26068~medium.jpg"
   },
   "lucy": {
     "path": "/photos/lucy.jpg",
-    "title": "Lucy Spacecraft Move from WPC to Airlock",
-    "credit": "NASA/Ben Smegelsky",
-    "source": "https://images.nasa.gov/details/KSC-20210929-PH-JBS01_0051",
-    "kind": "Фото"
+    "source": "https://commons.wikimedia.org/wiki/File:Illustration_of_the_deployed_Lucy_spacecraft.jpg",
+    "title": "File:Illustration of the deployed Lucy spacecraft.jpg",
+    "credit": "NASA",
+    "license": "Public domain",
+    "kind": "Иллюстрация собранного аппарата",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Illustration_of_the_deployed_Lucy_spacecraft.jpg/1280px-Illustration_of_the_deployed_Lucy_spacecraft.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
   "psyche": {
     "path": "/photos/psyche.jpg",
@@ -101,24 +107,28 @@
   },
   "perseverance": {
     "path": "/photos/perseverance.jpg",
-    "title": "The Parts Inside Perseverance",
-    "credit": "JPL",
-    "source": "https://images.nasa.gov/details/PIA24204",
-    "kind": "Фото"
+    "source": "https://images.nasa.gov/details/PIA24542",
+    "title": "Perseverance's Selfie with Ingenuity",
+    "kind": "Фото собранного аппарата",
+    "credit": "NASA/JPL-Caltech/MSSS",
+    "imageSource": "https://images-assets.nasa.gov/image/PIA24542/PIA24542~medium.jpg"
   },
   "curiosity": {
     "path": "/photos/curiosity.jpg",
-    "title": "Arm Stretch by Curiosity Mars Rover",
-    "credit": "JPL",
-    "source": "https://images.nasa.gov/details/PIA13389",
-    "kind": "Фото"
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "title": "NASA — fully assembled curiosity",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Curiosity%20Rover%20%28MSL%29/Curiosity%20Rover%20%28MSL%29%20%28Clean%29.png"
   },
   "mro": {
     "path": "/photos/mro.jpg",
-    "title": "Orbiter Near Final Configuration",
-    "credit": "JPL",
-    "source": "https://images.nasa.gov/details/PIA07214",
-    "kind": "Фото"
+    "title": "NASA — fully assembled mro",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA 3D Resources",
+    "license": "NASA media guidelines",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Mars%20Reconnaissance%20Orbiter%20%28MRO%29%20%28C%29/Mars%20Reconnaissance%20Orbiter%20%28MRO%29%20%28C%29.png"
   },
   "soho": {
     "path": "/photos/soho.jpg",
@@ -159,10 +169,11 @@
   },
   "spherex": {
     "path": "/photos/spherex.jpg",
-    "title": "SPHEREx Spacecraft Arrival and Unboxing",
-    "credit": "BAE Systems/Benjamin Fry",
-    "source": "https://images.nasa.gov/details/KSC-20250116-PH-BMF02_0003",
-    "kind": "Фото"
+    "source": "https://images.nasa.gov/details/PIA23869",
+    "title": "SPHEREx Preliminary Design (Illustration)",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA/JPL-Caltech",
+    "imageSource": "https://images-assets.nasa.gov/image/PIA23869/PIA23869~thumb.jpg"
   },
   "mars-odyssey": {
     "path": "/photos/mars-odyssey.jpg",
@@ -173,10 +184,11 @@
   },
   "maven": {
     "path": "/photos/maven.jpg",
-    "title": "Primary Structure for MAVEN Spacecraft",
-    "credit": "JPL",
-    "source": "https://images.nasa.gov/details/PIA14754",
-    "kind": "Фото"
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "title": "NASA — fully assembled maven",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Mars%20Atmosphere%20and%20Volatile%20EvolutioN%20%28MAVEN%29%20%28A%29/Mars%20Atmosphere%20and%20Volatile%20EvolutioN%20%28MAVEN%29%20%28A%29.png"
   },
   "xmm-newton": {
     "path": "/photos/xmm-newton.jpg",

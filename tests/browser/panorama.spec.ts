@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test';
-test.beforeEach(async({page})=>{await page.route('**/api/ephemeris/**',r=>r.fulfill({status:502,json:{code:'source_unavailable',error:'offline'}}));await page.goto('/');});
+test.beforeEach(async({page})=>{await page.addInitScript(()=>localStorage.setItem('orbita-welcome-seen','true'));await page.route('**/api/ephemeris/**',r=>r.fulfill({status:502,json:{code:'source_unavailable',error:'offline'}}));await page.goto('/');});
 test('independent panels leave a full panorama and reopen',async({page})=>{
  await page.getByLabel('Свернуть список миссий').click();await expect(page.locator('.catalog')).toBeHidden();await expect(page.locator('.detail')).toBeVisible();
  await page.getByLabel('Свернуть описание миссии').click();await expect(page.locator('.detail')).toBeHidden();
@@ -11,7 +11,7 @@ test('mission layers, country filters and simple help are available',async({page
  await page.getByRole('button',{name:'Слои и масштаб',exact:true}).click();await page.getByLabel('Отображение миссий').selectOption('off');await page.getByLabel('Какие траектории показывать').selectOption('selected');await page.getByRole('button',{name:'Закрыть',exact:true}).click();
  await expect(page.locator('.craft-label,.estimate-label,.cluster')).toHaveCount(0);
  await page.getByRole('button',{name:'Управление',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('Пробел');await page.keyboard.press('Escape');
- await page.getByRole('button',{name:'О данных',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('a = −μ');
+ await page.getByRole('button',{name:'Информация о карте',exact:true}).click();await expect(page.getByRole('dialog')).toContainText('a = −μ');
 });
 test('future Psyche remains located from known vectors and its destination is visible',async({page})=>{
  const epoch=new Date();epoch.setUTCHours(0,0,0,0);
@@ -22,8 +22,8 @@ test('future Psyche remains located from known vectors and its destination is vi
  const future=new Date(+epoch+365*86400000);await page.getByLabel('Дата симуляции UTC').fill(future.toISOString().slice(0,10));
  await expect(page.locator('.ephemeris-value')).toBeVisible();await expect(page.locator('.destination-label')).toContainText('Психея');
 });
-test('back restores selected view and home returns to system',async({page})=>{
+test('right click is inert and home returns to system',async({page})=>{
  await page.getByLabel('Рассмотреть планету').selectOption('mars');await expect(page.locator('.planet-focus-info')).toContainText('Марс');
- await page.getByLabel('Рассмотреть планету').selectOption('earth');await page.locator('.space-canvas canvas').click({button:'right',position:{x:10,y:10}});await expect(page.getByLabel('Рассмотреть планету')).toHaveValue('mars');
+ await page.getByLabel('Рассмотреть планету').selectOption('earth');await page.locator('.space-canvas canvas').click({button:'right',position:{x:10,y:10}});await expect(page.getByLabel('Рассмотреть планету')).toHaveValue('earth');
  await page.keyboard.press('Backspace');await expect(page.getByLabel('Рассмотреть планету')).toHaveValue('');
 });

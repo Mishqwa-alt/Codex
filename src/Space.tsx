@@ -6,6 +6,7 @@ import {planets,planetPosition,scenePosition} from './orbits.mjs';
 import {estimateMission} from './estimates.mjs';
 import {positionAt,missionPositionAt} from './ephemeris.mjs';
 import type {Ephemeris,Mission} from './types';
+import {missionTrail} from './trails.mjs';
 import {destinations} from './missionExtras';
 import rawMissions from './data/missions.json';
 import Planet,{SunSurface} from './visuals/Planet';
@@ -23,11 +24,26 @@ function CraftLOD({mission,selected,size}:{mission:Mission;selected:boolean;size
  useFrame(()=>{if(!ref.current)return;const near=camera.position.distanceTo(ref.current.getWorldPosition(new THREE.Vector3()))<2;if(near!==detail)setDetail(near);});
  return <group ref={ref}><Craft mission={mission} size={size} detail={detail}/></group>;
 }
+function MissionPath({mission,data,date,scale,selected,bodies,point}:{mission:Mission;data:Ephemeris|undefined;date:Date;scale:string;selected:boolean;bodies:{p:typeof planets[number];position:[number,number,number]}[];point:[number,number,number]}){
+ const key=Math.floor(+date/60000);
+ const trail=useMemo(()=>missionTrail(mission,data,new Date(key*60000)),[mission,data,key]);
+ let points:[number,number,number][]=[];
+ const host=bodies.find(b=>b.p.id===mission.anchor);
+ if(trail.kind==='local-orbit'&&host){
+ const center=new THREE.Vector3(...host.position),offset=new THREE.Vector3(...point).sub(center),radius=offset.length();
+ const x=offset.normalize(),y=new THREE.Vector3(0,1,0).cross(x).normalize();if(y.lengthSq()<.01)y.set(1,0,0);
+ points=Array.from({length:97},(_,i)=>center.clone().addScaledVector(x,Math.cos(i/96*Math.PI*2)*radius).addScaledVector(y,Math.sin(i/96*Math.PI*2)*radius).toArray());
+ }else if(trail.kind==='host-motion'){
+ const p=planets.find(p=>p.id===mission.anchor);if(p)points=Array.from({length:97},(_,i)=>scenePosition(planetPosition(p,date,i/96*Math.PI*2),scale));
+ }else points=trail.points.map(p=>scenePosition(p,scale));
+ if(points.length<2)return null;
+ return <Line userData={{missionId:mission.id,trajectory:true,kind:trail.kind}} points={points} color={selected?'#c3aa80':'#52616c'} transparent opacity={selected?.48:.12} dashed dashSize={host?.008:.06} gapSize={host?.006:.04} lineWidth={.75}/>;
+}
 function System(props:Props){
  const {date,scale,labels,trajectories,ephemerides,selected,onSelect,reset,focus,focusBody,onBodyFocus,shadows,missionMode,trajectoryScope,visibleIds,onBack,onHome,onMotion}=props;
  const {gl}=useThree();
  const focusPlanet=(id:string)=>{onBodyFocus(id);gl.domElement.focus({preventScroll:true});};
- const [cluster,setCluster]=useState<string|null>(null);
+ const [cluster,setCluster]=useState<string|null>(null),[hovered,setHovered]=useState<string|null>(null);
  const day=date.toISOString().slice(0,10);
  const orbits=useMemo(()=>planets.map(p=>Array.from({length:181},(_,i)=>scenePosition(planetPosition(p,new Date(day),i/180*Math.PI*2),scale))),[day,scale]);
  const bodies=useMemo(()=>planets.map((p,i)=>({p,position:scenePosition(positionAt(ephemerides[p.id],date)||planetPosition(p,date),scale),orbit:orbits[i],precise:!!positionAt(ephemerides[p.id],date)})),[date,scale,orbits,ephemerides]);
@@ -67,10 +83,9 @@ function System(props:Props){
  const {point,moved,normal,size}=separate(v,m.id),e=ephemerides[m.id],isSelected=m.id===selected.id;
  return <group key={m.id}>
  {false&&moved&&isSelected&&<Line points={[scenePosition(v,scale),point]} color="#8d815d" dashed dashSize={.01} gapSize={.01} lineWidth={.5}/>}
- {trajectories&&(trajectoryScope==='all'||isSelected)&&precise&&e?.forecast&&e.points.length>1&&<Line points={Array.from({length:25},(_,i)=>positionAt(e,new Date(+date+(i-4)*7*86400000))).filter((v):v is number[]=>!!v).map(v=>scenePosition(v,scale))} color={isSelected?'#b3a181':'#4b565f'} transparent opacity={isSelected?.48:.12} dashed dashSize={.08} gapSize={.05} lineWidth={.8}/>}
- {trajectories&&!precise&&isSelected&&m.anchor==='deep'&&<Line points={[point,scenePosition(estimateMission(m,new Date(+date+180*86400000)).position||v,scale)]} color="#8c806b" transparent opacity={.4} dashed dashSize={.05} gapSize={.04} lineWidth={.7}/>}
- <group position={point} onClick={e=>{e.stopPropagation();onSelect(m.id);}}>{missionMode==='points'?<mesh><sphereGeometry args={[m.kind==='rover'?size:.025,12,8]}/><meshBasicMaterial color={isSelected?'#dfbb85':'#93a8b6'}/></mesh>:<group quaternion={normal?new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),new THREE.Vector3(...normal as [number,number,number])):undefined}><Suspense fallback={null}><CraftLOD mission={m} selected={isSelected} size={size}/></Suspense></group>}
- {labels&&(isSelected||(focusBody===m.anchor&&missionMode==='points'))&&<Html position={[.12,.1,0]} zIndexRange={[8,0]}><button className={precise?`craft-label ${isSelected?'selected':''}`:'estimate-label'} onClick={()=>onSelect(m.id)}>{m.name}</button></Html>}
+ {trajectories&&(trajectoryScope==='all'||isSelected)&&<MissionPath mission={m} data={e} date={date} scale={scale} selected={isSelected} bodies={bodies} point={point}/>}
+ <group position={point} onPointerOver={e=>{e.stopPropagation();setHovered(m.id);}} onPointerOut={()=>setHovered(null)} onClick={e=>{e.stopPropagation();onSelect(m.id);}}>{missionMode==='points'?<points userData={{missionId:m.id,renderMode:'point'}}><bufferGeometry><bufferAttribute attach="attributes-position" args={[new Float32Array([0,0,0]),3]}/></bufferGeometry><pointsMaterial size={isSelected?4:2.5} sizeAttenuation={false} color={isSelected?'#ffe2a1':'#ffffff'} toneMapped={false}/></points>:<group quaternion={normal?new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0),new THREE.Vector3(...normal as [number,number,number])):undefined}><Suspense fallback={null}><CraftLOD mission={m} selected={isSelected} size={size}/></Suspense></group>}
+ {labels&&(isSelected||hovered===m.id)&&<Html position={[.12,.1,0]} zIndexRange={[8,0]}><button className={precise?`craft-label ${isSelected?'selected':''}`:'estimate-label'} onClick={()=>onSelect(m.id)}>{m.name}</button></Html>}
  </group></group>;
  })}
  {false&&showingUnknown&&<group><mesh rotation={[-Math.PI/2,0,0]}><ringGeometry args={[(scale==='linear'?.3*.34:3.15*Math.log1p(.3)),(scale==='linear'?(selected.region==='outer'?6:2)*.34:3.15*Math.log1p(selected.region==='outer'?6:2)),120]}/><meshBasicMaterial color={selected.color} transparent opacity={.03} side={THREE.DoubleSide} depthWrite={false}/></mesh>{labels&&<Html position={[0,.3,-3]} center className="area-label">Область перелёта · координаты неизвестны</Html>}</group>}
@@ -79,5 +94,5 @@ function System(props:Props){
 class Boundary extends Component<{children:ReactNode},{error:boolean}>{state={error:false};static getDerivedStateFromError(){return {error:true};}render(){return this.state.error?<div className="canvas-fallback">3D-карта недоступна. Включите WebGL в браузере.<br/>Каталог и данные миссий продолжают работать.</div>:this.props.children;}}
 export default function Space(props:Props){
  const [supported]=useState(()=>{try{return !!document.createElement('canvas').getContext('webgl2');}catch{return false;}});
- return <Boundary>{supported?<Canvas shadows={props.shadows?'soft':false} camera={{position:[0,15,20],fov:45,near:.003,far:600}} dpr={[1,1.6]} gl={{antialias:true,alpha:false}} onCreated={({gl})=>{gl.toneMapping=THREE.ACESFilmicToneMapping;gl.toneMappingExposure=1.25;}}><System {...props}/></Canvas>:<div className="canvas-fallback">Для 3D-карты нужен WebGL 2.<br/>Каталог и данные миссий доступны ниже.</div>}</Boundary>;
+ return <Boundary>{supported?<Canvas shadows={props.shadows?'soft':false} camera={{position:[0,15,20],fov:45,near:.003,far:600}} dpr={[1,1.6]} gl={{antialias:true,alpha:false}} onCreated={({gl,raycaster})=>{raycaster.params.Points.threshold=.01;gl.toneMapping=THREE.ACESFilmicToneMapping;gl.toneMappingExposure=1.25;}}><System {...props}/></Canvas>:<div className="canvas-fallback">Для 3D-карты нужен WebGL 2.<br/>Каталог и данные миссий доступны ниже.</div>}</Boundary>;
 }

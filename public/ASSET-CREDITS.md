@@ -18,7 +18,7 @@ models or real-time attitude telemetry. Original geometry, materials and texture
 are retained; runtime centering and scale are changed for inspection.
 
 Earth, Mars, Venus, Jupiter, Saturn and Neptune maps are NASA visualization maps,
-not live imagery. Earth's map includes shaded topographic/bathymetric detail;
+not live imagery. Earth uses NASA Blue Marble with baked cloud imagery (Reto Stöckli), retrieved from Wikimedia Commons File:Land_ocean_ice_cloud_hires.jpg; resized to 2048×1024. This is a historical composite, not live weather;
 Venus is a radar-derived surface visualization, not its visible cloud cover.
 
 Mercury and Uranus maps, solar granulation and microrelief are original procedural
@@ -33,3 +33,5 @@ Three.js is MIT: see draco/THREE-LICENSE.txt.
 
 No model, texture, font or decoder needs an external CDN at runtime. Only the
 optional ephemeris API needs network access.
+
+Mission badges and spacecraft pictures: see /badge-credits.json and /photo-credits.json for per-file sources, authors and licenses.

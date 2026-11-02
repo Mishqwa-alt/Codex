@@ -1,0 +1,114 @@
+{
+  "new-horizons": {
+    "path": "/badges/new-horizons.png",
+    "source": "https://commons.wikimedia.org/wiki/File:New_Horizons_-_Logo2_big.png",
+    "title": "File:New Horizons - Logo2 big.png",
+    "credit": "NASA/JPL/APL/SwRI",
+    "license": "Public domain"
+  },
+  "tess": {
+    "path": "/badges/tess.png",
+    "source": "https://commons.wikimedia.org/wiki/File:TESS_logo_(transparent_bg).png",
+    "title": "File:TESS logo (transparent bg).png",
+    "credit": "NASA/Goddard Space Flight Center",
+    "license": "Public domain"
+  },
+  "parker": {
+    "path": "/badges/parker.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Parker_Solar_Probe_insignia.png",
+    "title": "File:Parker Solar Probe insignia.png",
+    "credit": "NASA/JHUAPL",
+    "license": "Public domain"
+  },
+  "juno": {
+    "path": "/badges/juno.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Juno_mission_insignia.svg",
+    "title": "File:Juno mission insignia.svg",
+    "credit": "NASA",
+    "license": "Public domain"
+  },
+  "europa-clipper": {
+    "path": "/badges/europa-clipper.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Europa_Clipper_patch.png",
+    "title": "File:Europa Clipper patch.png",
+    "credit": "NASA's Jet Propulsion Labratory",
+    "license": "Public domain"
+  },
+  "psyche": {
+    "path": "/badges/psyche.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Psyche_insignia.svg",
+    "title": "File:Psyche insignia.svg",
+    "credit": "National Aeronautics and Space Administration (NASA) / Arizona State University",
+    "license": "Public domain"
+  },
+  "mro": {
+    "path": "/badges/mro.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Mars_Reconnaissance_Orbiter_insignia.png",
+    "title": "File:Mars Reconnaissance Orbiter insignia.png",
+    "credit": "National Aeronautics and Space Administration (NASA) / Jet Propulsion Laboratory",
+    "license": "Public domain"
+  },
+  "chandrayaan-2": {
+    "path": "/badges/chandrayaan-2.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Chandrayaan_2_logo.jpg",
+    "title": "File:Chandrayaan 2 logo.jpg",
+    "credit": "Indian Space Research Organisation",
+    "license": "GODL-India"
+  },
+  "sdo": {
+    "path": "/badges/sdo.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Solar_Dynamics_Observatory_insignia.png",
+    "title": "File:Solar Dynamics Observatory insignia.png",
+    "credit": "NASA",
+    "license": "Public domain"
+  },
+  "aditya-l1": {
+    "path": "/badges/aditya-l1.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Aditya-L1_logo.png",
+    "title": "File:Aditya-L1 logo.png",
+    "credit": "Indian Space Research Organisation",
+    "license": "GODL-India"
+  },
+  "fermi": {
+    "path": "/badges/fermi.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Fermi_Gamma-ray_Space_Telescope_logo.svg",
+    "title": "File:Fermi Gamma-ray Space Telescope logo.svg",
+    "credit": "Credit: NASA/Sonoma State University/Aurore Simonnet",
+    "license": "Public domain"
+  },
+  "ixpe": {
+    "path": "/badges/ixpe.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Imaging_X-ray_Polarimetry_Explorer_(IXPE)_logo.png",
+    "title": "File:Imaging X-ray Polarimetry Explorer (IXPE) logo.png",
+    "credit": "NASA / Jarrod S. Bales",
+    "license": "Public domain"
+  },
+  "xposat": {
+    "path": "/badges/xposat.png",
+    "source": "https://commons.wikimedia.org/wiki/File:XPoSat_Logo.jpg",
+    "title": "File:XPoSat Logo.jpg",
+    "credit": "Indian Space Research Organisation/Sri Sai Dutta",
+    "license": "GODL-India"
+  },
+  "mars-odyssey": {
+    "path": "/badges/mars-odyssey.png",
+    "source": "https://commons.wikimedia.org/wiki/File:2001_Mars_Odyssey_-_mars-odyssey-logo-sm.png",
+    "title": "File:2001 Mars Odyssey - mars-odyssey-logo-sm.png",
+    "credit": "NASA/JPL/Corby Waste",
+    "license": "Public domain"
+  },
+  "maven": {
+    "path": "/badges/maven.png",
+    "source": "https://commons.wikimedia.org/wiki/File:MAVEN_Mission_Logo.png",
+    "title": "File:MAVEN Mission Logo.png",
+    "credit": "NASA",
+    "license": "Public domain"
+  },
+  "lucy": {
+    "path": "/badges/lucy.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Lucy_insignia.svg",
+    "title": "File:Lucy insignia.svg",
+    "credit": "National Aeronautics and Space Administration (NASA) · Southwest Research Institute (SwRI)",
+    "license": "Public domain"
+  }
+}
