@@ -1,0 +1,77 @@
+name: Publish Orbita
+on:
+  push:
+    branches: [orbita]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: orbita-publish
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build:share
+      - run: node -p "require('./package.json').version" > release/version.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: website
+          path: docs
+          include-hidden-files: true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: standalone
+          path: release
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: standalone
+          path: release
+      - name: Publish downloadable HTML
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          version="v$(cat release/version.txt)"
+          if ! gh release view "$version" >/dev/null 2>&1; then
+            gh release create "$version" --target "$GITHUB_SHA" --title "Орбита $version — без установки" --notes "Скачайте Orbita.html и откройте его в браузере. Все ресурсы и музыка включены; для расчётов используются сохранённые данные NASA."
+          fi
+          gh release upload "$version" release/Orbita.html --clobber
+  pages:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: website
+          path: docs
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4
