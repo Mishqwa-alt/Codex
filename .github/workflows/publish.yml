@@ -66,12 +66,25 @@ jobs:
         with:
           name: website
           path: docs
+      - name: Check whether the owner enabled Pages
+        id: enabled
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if gh api "repos/$GH_REPO/pages" >/dev/null 2>&1; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Standalone HTML is published. To enable the website, choose GitHub Actions in repository Settings > Pages, then rerun this workflow."
+          fi
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
+        if: steps.enabled.outputs.ready == 'true'
       - uses: actions/upload-pages-artifact@v3
+        if: steps.enabled.outputs.ready == 'true'
         with:
           path: docs
       - name: Deploy site
         id: deployment
+        if: steps.enabled.outputs.ready == 'true'
         uses: actions/deploy-pages@v4
