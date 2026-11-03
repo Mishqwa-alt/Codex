@@ -18,7 +18,7 @@ test('future Psyche remains located from known vectors and its destination is vi
  const fixture=(id:string)=>({id,target:id,epoch:epoch.toISOString(),fetchedAt:Date.now(),points:[{jd:1,position:[id==='psyche'?2:2.92,.1,0],velocity:[0,.01,0]}],frame:'J2000',center:'Sun',units:'AU',timeScale:'UT',forecast:false,source:'NASA/JPL Horizons',requestUrl:'https://ssd.jpl.nasa.gov/',statusVerified:false});
  await page.route('**/api/ephemeris/psyche**',r=>r.request().url().includes('?date=')?r.fulfill({status:502,json:{code:'no_ephemeris',error:'outside coverage'}}):r.fulfill({json:fixture('psyche')}));
  await page.route('**/api/ephemeris/dest-psyche**',r=>r.fulfill({json:fixture('dest-psyche')}));
- await page.getByLabel('Поиск миссий').fill('Psyche');await page.locator('.mission-row').click();
+ await page.getByLabel('Поиск миссий').fill('Psyche');await expect(page.locator('.mission-row')).toHaveCount(1);await page.locator('.mission-row').click();
  const future=new Date(+epoch+365*86400000);await page.getByLabel('Дата симуляции UTC').fill(future.toISOString().slice(0,10));
  await expect(page.locator('.ephemeris-value')).toBeVisible();await expect(page.locator('.destination-label')).toContainText('Психея');
 });

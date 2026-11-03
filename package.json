@@ -1,7 +1,7 @@
 {
   "name": "orbita-mission-atlas",
   "private": true,
-  "version": "0.4.0",
+  "version": "0.5.0",
   "type": "module",
   "scripts": {
     "dev": "node server/index.mjs",
@@ -9,7 +9,9 @@
     "start": "node server/index.mjs --production",
     "test": "node tests/science.test.mjs",
     "check": "tsc -b",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "snapshot": "node scripts/snapshot.mjs",
+    "build:share": "tsc -b && node scripts/share.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",

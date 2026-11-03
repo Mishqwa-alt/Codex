@@ -1,16 +1,18 @@
 import {Component,Suspense,useEffect,useMemo,type ReactNode} from 'react';
 import {Html,useGLTF} from '@react-three/drei';
+import {assetUrl} from '../runtime';
 import * as THREE from 'three';
 import type {Mission} from '../types';
 export const craftAssets:Record<string,string>={
  'voyager-1':'voyager','voyager-2':'voyager',jwst:'jwst',hubble:'hubble',juno:'juno',perseverance:'perseverance',parker:'parker',chandra:'chandra',mro:'mro',lro:'lro','osiris-apex':'osiris',fermi:'fermi',swift:'swift',sdo:'sdo','stereo-a':'stereo',soho:'soho',hinode:'hinode',tess:'tess'
 };
 export function modelDescription(m:Mission){return craftAssets[m.id]?'3D-модель NASA · ориентация условная':'Упрощённая 3D-реконструкция · не инженерная модель';}
+const boundsCache=new WeakMap<THREE.Object3D,{center:THREE.Vector3;extent:number}>();
 function OfficialModel({asset,size,onReady}:{asset:string;size:number;onReady?:()=>void}){
- const {scene}=useGLTF(`/models/${asset}.glb`,'/draco/',false);
+ const {scene}=useGLTF(assetUrl(`/models/${asset}.glb`),assetUrl('/draco/'),false);
  const object=useMemo(()=>{
- const clone=scene.clone(true);const box=new THREE.Box3().setFromObject(clone),center=box.getCenter(new THREE.Vector3());
- const extent=Math.max(...box.getSize(new THREE.Vector3()).toArray());
+ let bounds=boundsCache.get(scene);if(!bounds){const box=new THREE.Box3().setFromObject(scene);bounds={center:box.getCenter(new THREE.Vector3()),extent:Math.max(...box.getSize(new THREE.Vector3()).toArray())};boundsCache.set(scene,bounds);}
+ const clone=scene.clone(true),{center,extent}=bounds;
  clone.position.sub(center);const group=new THREE.Group();group.add(clone);group.scale.setScalar(size/Math.max(extent,.0001));
  group.traverse(node=>{if(node instanceof THREE.Mesh){node.castShadow=true;node.receiveShadow=true;}});
  return group;

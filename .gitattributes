@@ -1,0 +1,3 @@
+docs/** linguist-generated=true
+docs/assets/*.js -diff
+docs/assets/*.css -diff

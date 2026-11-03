@@ -1,5 +1,6 @@
 import {useMemo,Suspense} from 'react';
 import {useTexture} from '@react-three/drei';
+import {assetUrl} from '../runtime';
 import * as THREE from 'three';
 const mapped=new Set(['earth','mars','venus','jupiter','saturn','neptune']);
 // Artistic microrelief, deliberately not an elevation dataset. Seamless 3D noise.
@@ -25,7 +26,7 @@ function makeTexture(id:string,height=false){
  return texture;
 }
 function Material({id,radius}:{id:string;radius:number}){
- const texture=useTexture(`/textures/${id}.jpg`);
+ const texture=useTexture(assetUrl(`/textures/${id}.jpg`));
  const color=useMemo(()=>{const t=texture.clone();t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;t.needsUpdate=true;return t;},[texture]);
  const bump=useMemo(()=>makeTexture(id,true),[id]);
  const rocky=id==='mars';

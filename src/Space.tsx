@@ -14,14 +14,14 @@ import Craft from './visuals/Craft';
 import Navigation,{type ViewTarget} from './visuals/Navigation';
 import Lighting from './visuals/Lighting';
 const missions=rawMissions as Mission[];
-interface Props {date:Date;scale:string;labels:boolean;trajectories:boolean;ephemerides:Record<string,Ephemeris>;selected:Mission;onSelect:(id:string)=>void;reset:number;focus:number[]|null;focusBody:string|null;onBodyFocus:(id:string|null)=>void;shadows:boolean;missionMode:'off'|'points'|'models';trajectoryScope:'selected'|'all';visibleIds:string[];onBack:()=>void;onHome:()=>void;onMotion?:(eye:number[],look:number[])=>void}
+interface Props {date:Date;scale:string;labels:boolean;trajectories:boolean;ephemerides:Record<string,Ephemeris>;selected:Mission;onSelect:(id:string)=>void;reset:number;focus:number[]|null;focusBody:string|null;onBodyFocus:(id:string|null)=>void;shadows:boolean;paused:boolean;missionMode:'off'|'points'|'models';trajectoryScope:'selected'|'all';visibleIds:string[];onBack:()=>void;onHome:()=>void;onMotion?:(eye:number[],look:number[])=>void}
 function Belt({scale}:{scale:string}){
  const positions=useMemo(()=>{let seed=81;const rand=()=>{seed=seed*16807%2147483647;return seed/2147483647;};const values=[];for(let i=0;i<1800;i++){const r=2.15+rand()*1.1,a=rand()*Math.PI*2;values.push(...scenePosition([r*Math.cos(a),r*Math.sin(a),(rand()-.5)*.1],scale));}return new Float32Array(values);},[scale]);
  return <points><bufferGeometry><bufferAttribute attach="attributes-position" args={[positions,3]}/></bufferGeometry><pointsMaterial color="#a79472" size={.008} transparent opacity={.4}/></points>;
 }
 function CraftLOD({mission,selected,size}:{mission:Mission;selected:boolean;size:number}){
- const ref=useRef<THREE.Group>(null);const {camera}=useThree();const [detail,setDetail]=useState(false);
- useFrame(()=>{if(!ref.current)return;const near=camera.position.distanceTo(ref.current.getWorldPosition(new THREE.Vector3()))<2;if(near!==detail)setDetail(near);});
+ const ref=useRef<THREE.Group>(null);const {camera,size:viewport}=useThree();const [detail,setDetail]=useState(false);const elapsed=useRef(0),world=useMemo(()=>new THREE.Vector3(),[]);
+ useFrame((_s,dt)=>{elapsed.current+=dt;if(elapsed.current<.12||!ref.current)return;elapsed.current=0;const distance=camera.position.distanceTo(ref.current.getWorldPosition(world));const pixels=size/distance*viewport.height/(2*Math.tan(THREE.MathUtils.degToRad((camera as THREE.PerspectiveCamera).fov||45)/2));const next=detail?pixels>18:pixels>28;if(next!==detail)setDetail(next);});
  return <group ref={ref}><Craft mission={mission} size={size} detail={detail}/></group>;
 }
 function MissionPath({mission,data,date,scale,selected,bodies,point}:{mission:Mission;data:Ephemeris|undefined;date:Date;scale:string;selected:boolean;bodies:{p:typeof planets[number];position:[number,number,number]}[];point:[number,number,number]}){
@@ -42,6 +42,7 @@ function MissionPath({mission,data,date,scale,selected,bodies,point}:{mission:Mi
 function System(props:Props){
  const {date,scale,labels,trajectories,ephemerides,selected,onSelect,reset,focus,focusBody,onBodyFocus,shadows,missionMode,trajectoryScope,visibleIds,onBack,onHome,onMotion}=props;
  const {gl}=useThree();
+ const shadowClock=useRef(0);useFrame((_s,dt)=>{shadowClock.current+=dt;if(shadowClock.current>.5){gl.shadowMap.needsUpdate=true;shadowClock.current=0;}});
  const focusPlanet=(id:string)=>{onBodyFocus(id);gl.domElement.focus({preventScroll:true});};
  const [cluster,setCluster]=useState<string|null>(null),[hovered,setHovered]=useState<string|null>(null);
  const day=date.toISOString().slice(0,10);
@@ -94,5 +95,5 @@ function System(props:Props){
 class Boundary extends Component<{children:ReactNode},{error:boolean}>{state={error:false};static getDerivedStateFromError(){return {error:true};}render(){return this.state.error?<div className="canvas-fallback">3D-карта недоступна. Включите WebGL в браузере.<br/>Каталог и данные миссий продолжают работать.</div>:this.props.children;}}
 export default function Space(props:Props){
  const [supported]=useState(()=>{try{return !!document.createElement('canvas').getContext('webgl2');}catch{return false;}});
- return <Boundary>{supported?<Canvas shadows={props.shadows?'soft':false} camera={{position:[0,15,20],fov:45,near:.003,far:600}} dpr={[1,1.6]} gl={{antialias:true,alpha:false}} onCreated={({gl,raycaster})=>{raycaster.params.Points.threshold=.01;gl.toneMapping=THREE.ACESFilmicToneMapping;gl.toneMappingExposure=1.25;}}><System {...props}/></Canvas>:<div className="canvas-fallback">Для 3D-карты нужен WebGL 2.<br/>Каталог и данные миссий доступны ниже.</div>}</Boundary>;
+ return <Boundary>{supported?<Canvas frameloop={props.paused?'never':'always'} shadows={props.shadows?'soft':false} camera={{position:[0,15,20],fov:45,near:.003,far:600}} dpr={[1,1.6]} gl={{antialias:true,alpha:false}} onCreated={({gl,raycaster})=>{raycaster.params.Points.threshold=.01;gl.shadowMap.autoUpdate=false;gl.toneMapping=THREE.ACESFilmicToneMapping;gl.toneMappingExposure=1.25;}}><System {...props}/></Canvas>:<div className="canvas-fallback">Для 3D-карты нужен WebGL 2.<br/>Каталог и данные миссий доступны ниже.</div>}</Boundary>;
 }

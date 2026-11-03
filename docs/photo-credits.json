@@ -1,0 +1,401 @@
+{
+  "voyager-1": {
+    "path": "/photos/voyager-1.jpg",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация NASA",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Voyager%20Probe%20%28A%29/Voyager%20Probe%20%28A%29.png",
+    "title": "voyager-1"
+  },
+  "voyager-2": {
+    "path": "/photos/voyager-2.jpg",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация NASA",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Voyager%20Probe%20%28A%29/Voyager%20Probe%20%28A%29.png",
+    "title": "voyager-2"
+  },
+  "new-horizons": {
+    "path": "/photos/new-horizons.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:15-011a-NewHorizons-PlutoFlyby-ArtistConcept-14July2015-20150115.jpg",
+    "kind": "Иллюстрация",
+    "credit": "Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute",
+    "license": "Public domain",
+    "imageSource": "https://upload.wikimedia.org/wikipedia/commons/3/32/15-011a-NewHorizons-PlutoFlyby-ArtistConcept-14July2015-20150115.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "title": "15-011a-NewHorizons-PlutoFlyby-ArtistConcept-14July2015-20150115.jpg"
+  },
+  "jwst": {
+    "path": "/photos/jwst.jpg",
+    "title": "NASA — fully assembled jwst",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA 3D Resources",
+    "license": "NASA media guidelines",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/James%20Webb%20Space%20Telescope%20%28B%29/James%20Webb%20Space%20Telescope%20%28B%29.png"
+  },
+  "hubble": {
+    "path": "/photos/hubble.jpg",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация NASA",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Hubble%20Space%20Telescope%20%28A%29/Hubble%20Space%20Telescope%20%28A%29.png",
+    "title": "hubble"
+  },
+  "chandra": {
+    "path": "/photos/chandra.jpg",
+    "title": "Chandra Spacecraft in Orbit Artist Concept",
+    "credit": "JPL",
+    "source": "https://images.nasa.gov/details/PIA18166",
+    "kind": "Иллюстрация"
+  },
+  "euclid": {
+    "path": "/photos/euclid.jpg",
+    "title": "Euclid Spacecraft in Cleanroom",
+    "credit": "JPL",
+    "source": "https://images.nasa.gov/details/PIA25783",
+    "kind": "Фото"
+  },
+  "tess": {
+    "path": "/photos/tess.jpg",
+    "title": "File:Transiting Exoplanet Survey Satellite artist concept (transparent background).png",
+    "source": "https://commons.wikimedia.org/wiki/File:Transiting_Exoplanet_Survey_Satellite_artist_concept_(transparent_background).png",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA / MIT / TESS team",
+    "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Transiting_Exoplanet_Survey_Satellite_artist_concept_%28transparent_background%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+  },
+  "parker": {
+    "path": "/photos/parker.jpg",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация NASA",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Parker%20Solar%20Probe/Parker%20Solar%20Probe.png",
+    "title": "parker"
+  },
+  "solar-orbiter": {
+    "path": "/photos/solar-orbiter.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Solar_Orbiter_spacecraft_is_prepared_for_encapsulation_in_the_United_Launch_Alliance_Atlas_V_payload_fairing.jpg",
+    "kind": "Фото",
+    "credit": "NASA/Ben Smegelsky",
+    "license": "Public domain",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Solar_Orbiter_spacecraft_is_prepared_for_encapsulation_in_the_United_Launch_Alliance_Atlas_V_payload_fairing.jpg/1280px-Solar_Orbiter_spacecraft_is_prepared_for_encapsulation_in_the_United_Launch_Alliance_Atlas_V_payload_fairing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Solar Orbiter spacecraft is prepared for encapsulation in the United Launch Alliance Atlas V payload fairing.jpg"
+  },
+  "europa-clipper": {
+    "path": "/photos/europa-clipper.jpg",
+    "source": "https://images.nasa.gov/details/PIA26068",
+    "title": "Europa Clipper Artist's Concept",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA/JPL-Caltech",
+    "imageSource": "https://images-assets.nasa.gov/image/PIA26068/PIA26068~medium.jpg"
+  },
+  "lucy": {
+    "path": "/photos/lucy.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Illustration_of_the_deployed_Lucy_spacecraft.jpg",
+    "title": "File:Illustration of the deployed Lucy spacecraft.jpg",
+    "credit": "NASA",
+    "license": "Public domain",
+    "kind": "Иллюстрация собранного аппарата",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Illustration_of_the_deployed_Lucy_spacecraft.jpg/1280px-Illustration_of_the_deployed_Lucy_spacecraft.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+  "psyche": {
+    "path": "/photos/psyche.jpg",
+    "title": "Psyche Spacecraft (Artist's Concept)",
+    "credit": "JPL",
+    "source": "https://images.nasa.gov/details/PIA23875",
+    "kind": "Иллюстрация"
+  },
+  "perseverance": {
+    "path": "/photos/perseverance.jpg",
+    "source": "https://images.nasa.gov/details/PIA24542",
+    "title": "Perseverance's Selfie with Ingenuity",
+    "kind": "Фото собранного аппарата",
+    "credit": "NASA/JPL-Caltech/MSSS",
+    "imageSource": "https://images-assets.nasa.gov/image/PIA24542/PIA24542~medium.jpg"
+  },
+  "curiosity": {
+    "path": "/photos/curiosity.jpg",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "title": "NASA — fully assembled curiosity",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Curiosity%20Rover%20%28MSL%29/Curiosity%20Rover%20%28MSL%29%20%28Clean%29.png"
+  },
+  "mro": {
+    "path": "/photos/mro.jpg",
+    "title": "NASA — fully assembled mro",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA 3D Resources",
+    "license": "NASA media guidelines",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Mars%20Reconnaissance%20Orbiter%20%28MRO%29%20%28C%29/Mars%20Reconnaissance%20Orbiter%20%28MRO%29%20%28C%29.png"
+  },
+  "soho": {
+    "path": "/photos/soho.jpg",
+    "title": "SOHO Spacecraft Artist Concept",
+    "credit": "JPL",
+    "source": "https://images.nasa.gov/details/PIA18170",
+    "kind": "Иллюстрация"
+  },
+  "sdo": {
+    "path": "/photos/sdo.jpg",
+    "title": "Solar Dynamics Observatory Artist Concept",
+    "credit": "JPL",
+    "source": "https://images.nasa.gov/details/PIA18169",
+    "kind": "Иллюстрация"
+  },
+  "stereo-a": {
+    "path": "/photos/stereo-a.jpg",
+    "title": "NASA STEREO-A Spacecraft Observing a very Active Sun Artist Concept",
+    "credit": "JPL",
+    "source": "https://images.nasa.gov/details/PIA18171",
+    "kind": "Иллюстрация"
+  },
+  "nustar": {
+    "path": "/photos/nustar.jpg",
+    "source": "https://en.wikipedia.org/wiki/NuSTAR",
+    "kind": "Изображение",
+    "credit": "NASA / Wikimedia · автор в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/NuSTAR_spacecraft_model.png/330px-NuSTAR_spacecraft_model.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "title": "NuSTAR"
+  },
+  "ixpe": {
+    "path": "/photos/ixpe.jpg",
+    "source": "https://en.wikipedia.org/wiki/IXPE",
+    "kind": "Изображение",
+    "credit": "NASA / Wikimedia · автор в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/IXPE-artist-rendition.jpg/330px-IXPE-artist-rendition.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "title": "IXPE"
+  },
+  "spherex": {
+    "path": "/photos/spherex.jpg",
+    "source": "https://images.nasa.gov/details/PIA23869",
+    "title": "SPHEREx Preliminary Design (Illustration)",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA/JPL-Caltech",
+    "imageSource": "https://images-assets.nasa.gov/image/PIA23869/PIA23869~thumb.jpg"
+  },
+  "mars-odyssey": {
+    "path": "/photos/mars-odyssey.jpg",
+    "title": "Artist Concept of Mars Odyssey",
+    "credit": "JPL",
+    "source": "https://images.nasa.gov/details/PIA04244",
+    "kind": "Иллюстрация"
+  },
+  "maven": {
+    "path": "/photos/maven.jpg",
+    "source": "https://github.com/nasa/NASA-3D-Resources",
+    "title": "NASA — fully assembled maven",
+    "kind": "Иллюстрация собранного аппарата",
+    "credit": "NASA 3D Resources",
+    "imageSource": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/11ebb4ee043715aefbba6aeec8a61746fad67fa7/3D%20Models/Mars%20Atmosphere%20and%20Volatile%20EvolutioN%20%28MAVEN%29%20%28A%29/Mars%20Atmosphere%20and%20Volatile%20EvolutioN%20%28MAVEN%29%20%28A%29.png"
+  },
+  "xmm-newton": {
+    "path": "/photos/xmm-newton.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:XMM-Newton_spacecraft_model.png",
+    "kind": "Иллюстрация",
+    "credit": "ESA/XMM-Newton, CC BY-SA 3.0 IGO",
+    "license": "Public domain",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/XMM-Newton_spacecraft_model.png/1280px-XMM-Newton_spacecraft_model.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "XMM-Newton spacecraft model.png"
+  },
+  "bepicolombo": {
+    "path": "/photos/bepicolombo.jpg",
+    "title": "BepiColombo",
+    "source": "https://commons.wikimedia.org/wiki/File:BepiColombo_stack_cropped.jpg",
+    "kind": "Изображение",
+    "credit": "ESA–C. Carreau",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/BepiColombo_stack_cropped.jpg/330px-BepiColombo_stack_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0 igo"
+  },
+  "juno": {
+    "path": "/photos/juno.jpg",
+    "title": "Juno (spacecraft)",
+    "source": "https://commons.wikimedia.org/wiki/File:Juno_spacecraft_model_1.png",
+    "kind": "Изображение",
+    "credit": "National Aeronautics and Space Administration (NASA)",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Juno_spacecraft_model_1.png/330px-Juno_spacecraft_model_1.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "Public domain"
+  },
+  "juice": {
+    "path": "/photos/juice.jpg",
+    "title": "Jupiter Icy Moons Explorer",
+    "source": "https://commons.wikimedia.org/wiki/File:Juice_launch_kit_cover_close-up.png",
+    "kind": "Изображение",
+    "credit": "ESA",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Juice_launch_kit_cover_close-up.png/330px-Juice_launch_kit_cover_close-up.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0 igo"
+  },
+  "hayabusa2": {
+    "path": "/photos/hayabusa2.jpg",
+    "title": "Hayabusa2",
+    "source": "https://commons.wikimedia.org/wiki/File:Hayabusa2_Ion_thruster.jpg",
+    "kind": "Изображение",
+    "credit": "DLR German Aerospace Center",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Hayabusa2_Ion_thruster.jpg/330px-Hayabusa2_Ion_thruster.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "CC BY 2.0"
+  },
+  "hera": {
+    "path": "/photos/hera.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hera_spacecraft_design.jpg",
+    "kind": "Иллюстрация",
+    "credit": "Patrick Michel, Michael Küppers, Adriano Campo Bagatin, Benoit Carry, Sébastien Charnoz, Julia de Leon, Alan Fitzsimmons, Paulo Gordo, Simon F. Green, Alain Hérique",
+    "license": "CC BY 4.0",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Hera_spacecraft_design.jpg/1280px-Hera_spacecraft_design.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Hera spacecraft design.jpg"
+  },
+  "mars-express": {
+    "path": "/photos/mars-express.jpg",
+    "title": "Mars Express",
+    "source": "https://commons.wikimedia.org/wiki/File:Mars-express-volcanoes-sm.jpg",
+    "kind": "Изображение",
+    "credit": "NASA/JPL/Corby Waste",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Mars-express-volcanoes-sm.jpg/330px-Mars-express-volcanoes-sm.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "Public domain"
+  },
+  "tgo": {
+    "path": "/photos/tgo.jpg",
+    "title": "Trace Gas Orbiter",
+    "source": "https://en.wikipedia.org/wiki/Trace_Gas_Orbiter",
+    "kind": "Изображение",
+    "credit": "Wikimedia · автор и лицензия в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/en/thumb/a/ae/ExoMars_2016_TGO_and_EDM_trans-small.png/330px-ExoMars_2016_TGO_and_EDM_trans-small.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "hope": {
+    "path": "/photos/hope.jpg",
+    "title": "Emirates Mars Mission",
+    "source": "https://en.wikipedia.org/wiki/Emirates_Mars_Mission",
+    "kind": "Изображение",
+    "credit": "Wikimedia · автор и лицензия в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/1d/Mars_Hope_Probe.png/330px-Mars_Hope_Probe.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "tianwen-1": {
+    "path": "/photos/tianwen-1.jpg",
+    "title": "Tianwen-1",
+    "source": "https://en.wikipedia.org/wiki/Tianwen-1",
+    "kind": "Изображение",
+    "credit": "Wikimedia · автор и лицензия в источнике",
+    "imageSource": "https://upload.wikimedia.org/wikipedia/en/9/99/Mars_Global_Remote_Sensing_Orbiter_and_Small_Rover_%282020%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  "lro": {
+    "path": "/photos/lro.jpg",
+    "title": "Lunar Reconnaissance Orbiter",
+    "source": "https://commons.wikimedia.org/wiki/File:Lunar_Reconnaissance_Orbiter_001.jpg",
+    "kind": "Изображение",
+    "credit": "NASA",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Lunar_Reconnaissance_Orbiter_001.jpg/330px-Lunar_Reconnaissance_Orbiter_001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "Public domain"
+  },
+  "chandrayaan-2": {
+    "path": "/photos/chandrayaan-2.jpg",
+    "title": "Chandrayaan-2",
+    "source": "https://commons.wikimedia.org/wiki/File:GSLV_Mk_III_M1%2C_Chandrayaan-2_-_Vikram_lander_mounted_on_top_of_orbiter.jpg",
+    "kind": "Изображение",
+    "credit": "Indian Space Research Organisation",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/GSLV_Mk_III_M1%2C_Chandrayaan-2_-_Vikram_lander_mounted_on_top_of_orbiter.jpg/330px-GSLV_Mk_III_M1%2C_Chandrayaan-2_-_Vikram_lander_mounted_on_top_of_orbiter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "GODL-India"
+  },
+  "danuri": {
+    "path": "/photos/danuri.jpg",
+    "title": "Danuri",
+    "source": "https://commons.wikimedia.org/wiki/File:Kplo_rendered_image.png",
+    "kind": "Изображение",
+    "credit": "Ministry of Science and ICT\n\n과학기술정보통신부",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Kplo_rendered_image.png/330px-Kplo_rendered_image.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "KOGL Type 1"
+  },
+  "aditya-l1": {
+    "path": "/photos/aditya-l1.jpg",
+    "title": "Aditya-L1",
+    "source": "https://commons.wikimedia.org/wiki/File:Aditya_L1.png",
+    "kind": "Изображение",
+    "credit": "ISRO",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Aditya_L1.png/330px-Aditya_L1.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "GODL-India"
+  },
+  "hinode": {
+    "path": "/photos/hinode.jpg",
+    "title": "Hinode (satellite)",
+    "source": "https://commons.wikimedia.org/wiki/File:SOLAR-B_artists_concept.jpg",
+    "kind": "Изображение",
+    "credit": "NASA/GSFC/C. Meaney",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/SOLAR-B_artists_concept.jpg/330px-SOLAR-B_artists_concept.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "Public domain"
+  },
+  "fermi": {
+    "path": "/photos/fermi.jpg",
+    "title": "Fermi Gamma-ray Space Telescope",
+    "source": "https://commons.wikimedia.org/wiki/File:Fermi_Gamma-ray_Space_Telescope_spacecraft_model.png",
+    "kind": "Изображение",
+    "credit": "NASA",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Fermi_Gamma-ray_Space_Telescope_spacecraft_model.png/330px-Fermi_Gamma-ray_Space_Telescope_spacecraft_model.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "Public domain"
+  },
+  "swift": {
+    "path": "/photos/swift.jpg",
+    "title": "Neil Gehrels Swift Observatory",
+    "source": "https://commons.wikimedia.org/wiki/File:Swift_Observatory_spacecraft_model.png",
+    "kind": "Изображение",
+    "credit": "NASA E/PO, Sonoma State University/Aurore Simonnet",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Swift_Observatory_spacecraft_model.png/330px-Swift_Observatory_spacecraft_model.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "Public domain"
+  },
+  "xrism": {
+    "path": "/photos/xrism.jpg",
+    "title": "X-Ray Imaging and Spectroscopy Mission",
+    "source": "https://commons.wikimedia.org/wiki/File:XRISM_in_a_nutshell_%28cropped%29.png",
+    "kind": "Изображение",
+    "credit": "ESA",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/XRISM_in_a_nutshell_%28cropped%29.png/330px-XRISM_in_a_nutshell_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0 igo"
+  },
+  "xposat": {
+    "path": "/photos/xposat.jpg",
+    "title": "XPoSat",
+    "source": "https://commons.wikimedia.org/wiki/File:PSLV-C58%2C_XPoSat_-_Render_of_XPoSat_satellite_in_deployed_configuration.png",
+    "kind": "Изображение",
+    "credit": "Indian Space Research Organisation",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/PSLV-C58%2C_XPoSat_-_Render_of_XPoSat_satellite_in_deployed_configuration.png/330px-PSLV-C58%2C_XPoSat_-_Render_of_XPoSat_satellite_in_deployed_configuration.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "license": "GODL-India"
+  },
+  "einstein-probe": {
+    "path": "/photos/einstein-probe.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Einstein_Probe_illustration.png",
+    "kind": "Иллюстрация",
+    "credit": "China News Service",
+    "license": "CC BY 4.0",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Einstein_Probe_illustration.png/1280px-Einstein_Probe_illustration.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "title": "Einstein Probe illustration.png"
+  },
+  "svom": {
+    "path": "/photos/svom.jpg",
+    "title": "Space Variable Objects Monitor",
+    "source": "https://en.wikipedia.org/wiki/Space_Variable_Objects_Monitor",
+    "kind": "Изображение",
+    "credit": "Wikimedia · автор и лицензия в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/SVOM_from_%27Target_of_Opportunity%27_video.jpg/330px-SVOM_from_%27Target_of_Opportunity%27_video.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "punch": {
+    "path": "/photos/punch.jpg",
+    "title": "Polarimeter to Unify the Corona and Heliosphere",
+    "source": "https://en.wikipedia.org/wiki/Polarimeter_to_Unify_the_Corona_and_Heliosphere",
+    "kind": "Изображение",
+    "credit": "Wikimedia · автор и лицензия в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/PUNCH_Satellites_Processing_-_Integration_and_Testing_%28KSC-20250123-PH-SRI01_0001%29.jpg/330px-PUNCH_Satellites_Processing_-_Integration_and_Testing_%28KSC-20250123-PH-SRI01_0001%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "tianwen-2": {
+    "path": "/photos/tianwen-2.jpg",
+    "title": "Tianwen-2",
+    "source": "https://en.wikipedia.org/wiki/Tianwen-2",
+    "kind": "Изображение",
+    "credit": "Wikimedia · автор и лицензия в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Rendering_of_Tianwen_2_asteroid_mission_03_cropped_rotated.png/330px-Rendering_of_Tianwen_2_asteroid_mission_03_cropped_rotated.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  "osiris-apex": {
+    "path": "/photos/osiris-apex.jpg",
+    "title": "OSIRIS-REx / OSIRIS-APEX",
+    "source": "https://en.wikipedia.org/wiki/OSIRIS-REx",
+    "kind": "Изображение",
+    "credit": "Wikimedia · автор и лицензия в источнике",
+    "imageSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/OSIRIS-REx_spacecraft_model.png/330px-OSIRIS-REx_spacecraft_model.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  }
+}
